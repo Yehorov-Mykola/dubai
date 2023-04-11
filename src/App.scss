@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Gilroy", serif;
+  font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  margin: 0px auto;
+  padding: 0 10px;
+  max-width: 1800px;
+  width: 100%;
+}
