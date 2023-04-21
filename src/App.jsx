@@ -1,12 +1,9 @@
 import './App.scss';
-import './reset.scss';
+import './assets/reset.scss';
 
-//import Cards from "./components/cards/Cards";
-//import SingleNews from "./components/singleNews/SingleNews.jsx";
-import Header from "./components/header/Header";
-import About from "./components/about/About";
-//import Contacts from "./components/contacts/Contacts";
-//import NotFound from "./components/notFound/NotFound";
+import Header from "./assets/components/header/Header";
+import About from "./assets/components/about/About";
+import Main from "./assets/components/main/Main";
 
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 
@@ -16,9 +13,8 @@ function App() {
       <BrowserRouter>
       <Header/>
         <Routes>        
-
+          <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
-
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "title": "Villas",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+    "image": "https://picsum.photos/700/400",
+    "category": "Building"  
+  }
+]

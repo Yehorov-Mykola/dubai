@@ -1,0 +1,291 @@
+@import './../../mixins/_mixins';
+@import './../../consts/colors.scss';
+
+.header {
+    position: fixed;
+    background-color: $color-dark;
+    width: 100%;
+    z-index: 5;
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1470px;
+        width: 100%;
+        margin-left: 30px;
+
+        @include onLaptop {
+            justify-content: right;
+        }
+
+        &-options {
+            display: flex;
+            align-items: center;
+
+            @include onLaptop {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.menu {
+    max-width: 400px;
+    min-height: 80px;
+
+    @include onLaptop {
+        order: 1;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        min-height: 80px;
+
+        @include onLaptop {
+            display: none;
+        }
+        &--open{
+            display: block;
+            left: 0;
+            right: 0;
+            top: 80px;
+            bottom: 0px;
+            position: absolute;
+            background-color: $color-dark;
+            padding-left: 20%;
+            padding-top: 100px;
+            z-index: 100;
+            height: 100vh;
+         }
+         &-item{
+            position: relative;
+         }
+    }
+
+    &__btn {
+        display: none;
+        background-color: transparent;
+        outline: none;
+        padding: 0;
+        cursor: pointer;
+        margin-top: 32px;
+        border: none;
+
+        @include onLaptop {
+            display: block;
+        }
+    }
+
+    &__btn::before,
+    &__btn::after {
+        content: "";
+        width: 24px;
+        height: 2px;
+        background-color: $color-light-gray;
+        display: block;
+        margin-bottom: 4px;
+        transition: transform .3s;
+    }
+
+    &__btn::after {
+        margin-bottom: 0;
+    }
+
+    &__btn.menu__btn--active .menu__btn-line {
+        opacity: 0;
+    }
+
+    &__btn.menu__btn--active::after {
+        transform: translateY(-6px) rotate(-135deg);
+    }
+
+    &__btn.menu__btn--active::before {
+        transform: translateY(6px) rotate(135deg);
+    }
+
+    &__btn-line {
+        background-color: $color-light-gray;
+        display: block;
+        width: 24px;
+        height: 2px;
+        margin-bottom: 4px;
+        opacity: 1;
+        -webkit-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+    }
+
+    &__link {
+        color: $color-light-gray;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        margin-right: 25px;
+        padding-bottom: 5px;
+        transition: all .3s;
+        text-transform: uppercase;
+        position: relative;
+        @include onLaptop {
+            display: block;
+            font-size: 36px;
+            line-height: 44px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            left: auto;
+            right: 0;
+            background-color: $color-yellow;
+            height: 1px;
+            bottom: -2px;
+            transition: all .3s;
+        }
+
+        &:hover::before {
+            width: 100%;
+            right: auto;
+            left: 0;
+        }
+        &-btn{
+            background-color: transparent;
+            border: none;
+            padding: 0 15px 5px 0;
+            margin-top: 6px;
+            font-family: "Gilroy", serif;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: "";
+                background-image: url(./../../../../public/img/svg/arrow-header.svg);
+                width: 9px;
+                height: 6px;
+                right: 0;
+                top: 4px;
+            }
+            
+            &--active{
+                color: $color-yellow;
+                &::after{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__link.active {
+        color: $color-yellow;
+    }
+
+    &__languages {
+        margin: 0 50px 0 120px;
+        @include onLaptop {
+            margin: 0 30px 0 30px;
+        }
+    }
+
+    &__language {
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #929292;
+        margin-right: 7px;
+        transition: color .3s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--active {
+            color: $color-yellow;
+        }
+    }
+    &__phone {
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        font-weight: 600;
+    }    
+}
+.submenu{
+    position: absolute;
+    top: 45px;
+    left: 0;    
+    background-color: $color-dark;
+    width: 275px;
+    border: 1px solid $color-gray;
+    z-index: 5;
+
+    &__item{
+        padding: 10px 35px 10px 20px; 
+        &:hover{            
+            background-color: $color-yellow;
+            cursor: pointer;
+            & a{
+                color: $color-dark;
+            }            
+        }   
+    }
+
+    &__link{
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 600;
+        color: $color-white;        
+    }
+}
+
+.logo {
+    color: $color-white;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 8px 0px 8px 10px;
+    border-left: 1px solid $color-yellow;
+    position: relative;
+
+    &::after,
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        height: 1px;
+        width: 30px;
+        background-color: $color-yellow;
+    }
+
+    &::after {
+        top: 0;
+    }
+
+    &::before {
+        bottom: 0;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: 10px;
+        line-height: 12px;
+        color: rgba($color-white, .6);
+        font-weight: 400;
+        margin-top: 5px;
+    }
+}
+

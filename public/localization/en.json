@@ -1,0 +1,103 @@
+{
+  "header":
+  {
+    "menu":[
+      {
+        "title": "blog",
+        "href": "/"
+      },
+      {
+        "title": "about",
+        "href": "/about"
+      },
+      {
+        "title": "contact",
+        "href": "/contact"
+      }
+    ],
+    "submenuBtn":"buy",
+    "submenu":[
+      {
+        "title": "Category number one ",
+        "href": "/"
+      },
+      {
+        "title": "Apartments in Dubai",
+        "href": "/"
+      },
+      {
+        "title": "Category number twenty five",
+        "href": "/"
+      }
+    ],
+    "logo": {
+      "title": "DubaiRealty",
+      "subtitle": "Real Estate",
+      "href": "/"
+    },
+    "lang": [
+      {
+        "title": "en",
+        "href": "/"
+      },
+      {
+        "title": "ua",
+        "href": "/"
+      }
+    ],
+    "button": "Book a consultation",
+    "phone": {
+      "title": "+3 (099) 111-11-11",
+      "href": "tel:%2B30991111111"
+    }
+  },
+  "main":
+  {
+    "title": "Welcome home to luxury",
+    "subtitle":"Lorem ipsum",
+    "button": "Book a consultation",
+    "prevBtn": "prev",
+    "nextBtn": "next",
+    "slider":[
+      {
+        "title": "hotel-1",
+        "url": "./img/main-bg/main-slider-1.jpg"
+      },
+      {
+        "title": "hotel-2",
+        "url": "./img/main-bg/main-slider-2.jpg"
+      },
+      {
+        "title": "hotel-3",
+        "url": "./img/main-bg/main-slider-3.jpg"
+      }
+    ],
+    "social":[
+      {
+        "title": "facebook",
+        "href": "/",
+        "url": "./img/svg/main-fb.svg"
+      },
+      {
+        "title": "twitter",
+        "href": "/",
+        "url": "./img/svg/main-tw.svg"
+      },
+      {
+        "title": "youtube",
+        "href": "/",
+        "url": "./img/svg/main-youtube.svg"
+      },
+      {
+        "title": "instagram",
+        "href": "/",
+        "url": "./img/svg/main-inst.svg"
+      },
+      {
+        "title": "in",
+        "href": "/",
+        "url": "./img/svg/main-in.svg"
+      }
+    ]
+  }
+}
