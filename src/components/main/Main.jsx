@@ -1,12 +1,13 @@
 import "./main.scss";
 import Modal from "../modal/Modal";
 import MailForm from "../mailForm/MailForm";
-import LatestProgect from "../latestProgect/LatestProgect";
+import LatestProgect from "./latestProgect/LatestProgect";
+import UsefulArticlesCard from "./usefulArticlesCard/UsefulArticlesCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Scrollbar, Autoplay} from "swiper";
+import { Pagination, Navigation, Scrollbar, Autoplay } from "swiper";
 import "swiper/css/autoplay";
 
 function Main() {
@@ -27,7 +28,7 @@ function Main() {
           <div className="main-slider__inner">
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-              autoplay={{ delay: 7000 }}
+              autoplay={{ delay: 5000 }}
               pagination={{
                 el: ".main-swiper-pagination",
                 type: "bullets",
@@ -42,7 +43,7 @@ function Main() {
                   <img src={i.url} alt={i.title} />
                 </SwiperSlide>
               ))}
-              <div className="swiper__navigation">                
+              <div className="swiper__navigation">
                 <div className="swiper-buttons">
                   <span className="swiper-button swiper-button--prev">
                     {mainData?.prevBtn}
@@ -58,7 +59,10 @@ function Main() {
               <div className="main-content__text">
                 <p className="main-content__descr">{mainData?.subtitle}</p>
                 <h1 className="main-content__title">{mainData?.title}</h1>
-                <button className="main-content__btn" onClick={() => setIsShowModal((prev) => !prev)}>
+                <button
+                  className="main-content__btn"
+                  onClick={() => setIsShowModal((prev) => !prev)}
+                >
                   {mainData?.button}
                 </button>
               </div>
@@ -77,7 +81,7 @@ function Main() {
       <LatestProgect title="Latest projects" />
 
       <section className="expertise">
-        <div className="container">
+        <div className="container container--narrow">
           <h2 className="expertise__title">Our expertise</h2>
           <h3 className="expertise__subtitle">
             "The best apartment in Dubai" we will find your dream
@@ -99,9 +103,55 @@ function Main() {
         </div>
       </section>
 
+      <section className="quote">
+        <div className="container container--middle">
+          <div className="quote__inner">
+            <p className="quote__text">
+              {mainData?.quote?.text}
+              <span className="quote__author">
+                {" "}
+                - {mainData?.quote?.author}
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="main-apartments">
+        <div className="container container--middle">
+          <div className="main-apartments__cards">
+            {mainData?.mainApartments.map((i) => (
+              <div className="main-apartments__card">
+                <img className="main-apartments__img" src={i.url} alt={i.title} />
+                <p className="main-apartments__text">{i.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <MailForm title="Contact us" subtitle="Do you have any questions?" />
 
-      {isShowModal && ( <Modal /> )}
+      <section className="useful-articles">
+        <div className="container container--middle">
+        <div className="useful-articles__up">
+          <h2 className="section-title">
+            {mainData?.usefulArticles?.title}
+          </h2>
+          <NavLink className="useful-articles__link" to={mainData?.usefulArticles?.link?.href}>
+            {mainData?.usefulArticles?.link?.title}
+          </NavLink>
+        </div>
+          <div className="useful-articles__cards">
+          {mainData?.usefulArticles?.cards?.map((item, index) => (
+                <UsefulArticlesCard key={index} item={item} />
+
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {isShowModal && <Modal />}
     </>
   );
 }

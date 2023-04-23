@@ -17,7 +17,8 @@
         bottom: 0;
         top: 0;
         background: rgba(39, 39, 39, 0.9);
-        z-index: 2;
+        z-index: 3;
+        overscroll-behavior: contain
     }
     &__title{
         font-size: 48px;

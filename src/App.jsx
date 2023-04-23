@@ -1,9 +1,9 @@
 import './App.scss';
 import './assets/reset.scss';
 
-import Header from "./assets/components/header/Header";
-import About from "./assets/components/about/About";
-import Main from "./assets/components/main/Main";
+import Header from "./components/header/Header";
+import About from "./components/about/About";
+import Main from "./components/main/Main";
 
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 

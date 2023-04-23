@@ -20,4 +20,17 @@ a{
   padding: 0 10px;
   max-width: 1800px;
   width: 100%;
+  &--middle{
+    max-width: 1110px;
+  }
+  &--narrow{
+    max-width: 730px;
+  }
+}
+
+.section-title{
+  font-size: 70px;
+  line-height: 85px;
+  font-weight: 700;
+  color: $color-white;
 }

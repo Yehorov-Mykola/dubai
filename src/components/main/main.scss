@@ -1,9 +1,8 @@
-@import './../../consts/colors.scss';
+@import './../../assets/consts/colors.scss';
+@import './../../assets/consts/colors.scss';
 
 .expertise {
-    padding-top: 100px;
-    margin: 0 auto;
-    max-width: 730px;
+    margin-bottom: 90px;
     color: $color-light-gray;
 
     &__title {
@@ -25,8 +24,7 @@
     &__text {
         line-height: 160%;
         font-size: 18px;
-        font-family: 'Work Sans', serif;
-       
+        font-family: 'Work Sans', serif;       
     }
 }
 
@@ -193,7 +191,7 @@
         &::before {
             position: absolute;
             content: "";
-            background-image: url("./../../../../public/img/svg/arrow-main-slider.svg");
+            background-image: url("./../../../public/img/svg/arrow-main-slider.svg");
             width: 13px;
             height: 20px;
             bottom: 0;
@@ -216,5 +214,79 @@
 
     &__link{
         margin-bottom: 20px;
+    }
+}
+
+.quote{
+    margin-bottom: 65px;
+
+    &__inner{
+        border: 1px solid $color-yellow;
+        padding: 70px 95px;
+    }
+    &__text{
+        line-height: 160%;
+        color: $color-white;
+        font-size: 30px;
+    }
+    &__author{
+        color: $color-yellow;
+    }
+}
+
+.main-apartments{
+    margin-bottom: 115px;
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card{
+        max-width: 535px;
+    }
+    &__img
+    {
+        width: 100%;
+    }
+    &__text{
+        margin-top: 70px;
+        font-size: 18px;
+        line-height: 160%;
+        font-family: 'Work Sans';
+        color: #E8E8E8;
+    }
+}
+
+.useful-articles{
+    margin-bottom: 170px;
+
+    &__up{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link{
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 600;
+        color: $color-gray;
+        padding-right: 45px;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(./../../../public/img/svg/arrow-right-grey.svg);
+            right: 0;
+            bottom: 0;
+            width: 12px;
+            height: 20px;
+        }
+    }
+    &__cards{
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
     }
 }

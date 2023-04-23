@@ -8,8 +8,9 @@ import axios from "axios";
 function Header() {
   const [data, setData] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [isShowModal, setIsShowModal] = useState(false);
   const [isShow, setIsShow] = useState(false);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const menuData = data.header?.menu;
   const logoData = data.header?.logo;
@@ -79,7 +80,7 @@ function Header() {
               </ul>
             </nav>
             <div className="header__right-options">
-              <Button onClick={() => setIsShowModal((prev) => !prev)}>
+              <Button onClick={() => setIsModalOpen(true)}>
                 {buttonData}
               </Button>
               <div className="menu__languages">
@@ -98,7 +99,12 @@ function Header() {
       </div>
     </header>
 
-    {isShowModal && ( <Modal /> )}
+    {isModalOpen && 
+        <Modal 
+          className={isModalOpen ? 'open' : 'close'}
+          onClose={() => setIsModalOpen(false)} 
+        />
+      }
     </>
     
   );
