@@ -3,13 +3,15 @@ import Button from "../button/Button";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Modal from "../modal/Modal";
+import useOutsideClick from "../../assets/hooks/useOutsideClick";
+import i18n from "./../../_i18n/_i18n";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 
 function Header() {
   const [data, setData] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [isShow, setIsShow] = useState(false);
-
+  const [isShowSubmenu, setIsShowSubmenu] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const menuData = data.header?.menu;
@@ -30,15 +32,20 @@ function Header() {
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
+  function changeLanguageOnClick(language) {
+    i18n.changeLanguage(language);
+  }
+
+
   return (
     <>
     <header className="header">
       <div className="container">
         <div className="header__inner">
-          <a href={logoData?.href} className="logo">
+          <NavLink to={logoData?.href} className="logo">
             {logoData?.title}{" "}
             <span className="logo__subtitle">{logoData?.subtitle}</span>
-          </a>
+          </NavLink>
           <div className="header__right">
             <nav className="menu">
               <button
@@ -52,28 +59,28 @@ function Header() {
                 <li class="menu__list-item ">
                   <button
                     class={`menu__link menu__link-btn ${
-                      isShow ? "menu__link-btn--active" : ""
+                      isShowSubmenu ? "menu__link-btn--active" : ""
                     }`}
-                    onClick={() => setIsShow((prev) => !prev)}
+                    onClick={() => setIsShowSubmenu((prev) => !prev)}
                   >
                     {submenuBtnData}
                   </button>
-                  {isShow && (
+                  {isShowSubmenu && (
                     <ul className="submenu">
-                      {submenuData?.map((i) => (
+                      {submenuData?.map((item, index) => (
                         <li class="submenu__item">
-                          <NavLink className="submenu__link" to={i.href}>
-                            {i.title}
+                          <NavLink key={index.id} className="submenu__link" to={item.href}>
+                            {item.title}
                           </NavLink>
                         </li>
                       ))}
                     </ul>
                   )}
                 </li>
-                {menuData?.map((i) => (
-                  <li class="menu__list-item">
-                    <NavLink className="menu__link" to={i.href}>
-                      {i.title}
+                {menuData?.map((item, index) => (
+                  <li key={index.id} class="menu__list-item">
+                    <NavLink className="menu__link" to={item.href}>
+                      {item.title}
                     </NavLink>
                   </li>
                 ))}
@@ -84,10 +91,10 @@ function Header() {
                 {buttonData}
               </Button>
               <div className="menu__languages">
-                {langData?.map((i) => (
-                  <a className="menu__language" href={i.href}>
-                    {i.title}
-                  </a>
+                {langData?.map((item, index) => (
+                  <button key={index} className="menu__language" onClick={() => changeLanguageOnClick(item.btn)}>
+                    {item.title}
+                  </button>
                 ))}
               </div>
               <a class="menu__phone" href={phoneData?.href}>

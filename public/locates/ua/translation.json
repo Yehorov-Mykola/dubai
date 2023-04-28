@@ -3,30 +3,30 @@
   {
     "menu":[
       {
-        "title": "blog",
+        "title": "блог",
         "href": "/blog"
       },
       {
-        "title": "about",
+        "title": "про нас",
         "href": "/about"
       },
       {
-        "title": "contact",
+        "title": "контакти",
         "href": "/contact"
       }
     ],
-    "submenuBtn":"buy",
+    "submenuBtn":"купити",
     "submenu":[
       {
-        "title": "Category number one ",
+        "title": "Категорія перша",
         "href": "/"
       },
       {
-        "title": "Apartments in Dubai",
+        "title": "Апартаменти в Дубаї",
         "href": "/"
       },
       {
-        "title": "Category number twenty five",
+        "title": "Категорія двадцять п'ять",
         "href": "/"
       }
     ],
@@ -37,15 +37,15 @@
     },
     "lang": [
       {
-        "title": "en",
+        "title": "англ",
         "btn": "en"
       },
       {
-        "title": "ua",
+        "title": "укр",
         "btn": "ua"
       }
     ],
-    "button": "Book a consultation",
+    "button": "Замовити консультацію",
     "phone": {
       "title": "+3 (099) 111-11-11",
       "href": "tel:%2B30991111111"
@@ -53,11 +53,11 @@
   },
   "main":
   {
-    "title": "Welcome home to luxury",
+    "title": "Ласкаво просимо",
     "subtitle":"Lorem ipsum",
-    "button": "Book a consultation",
-    "prevBtn": "prev",
-    "nextBtn": "next",
+    "button": "Замовити консультацію",
+    "prevBtn": "назад",
+    "nextBtn": "вперед",
     "slider":[
       {
         "title": "hotel-1",

@@ -1,5 +1,5 @@
-@import './../../../assets/mixins/_mixins';
-@import './../../../assets/consts/colors.scss';
+@import './../../../../assets/mixins/_mixins';
+@import './../../../../assets/consts/colors.scss';
 
 .card{
     position: relative;
@@ -70,7 +70,7 @@
             &::before{
                 position: absolute;
                 content: "";
-                background: url("./../../../../public/img/svg/arrow-right.svg");
+                background: url("./../../../../../public/img/svg/arrow-right.svg");
                 width: 13px;
                 height: 20px;
                 right: 0;

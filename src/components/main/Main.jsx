@@ -3,6 +3,9 @@ import Modal from "../modal/Modal";
 import MailForm from "../mailForm/MailForm";
 import LatestProgect from "./latestProgect/LatestProgect";
 import UsefulArticlesCard from "./usefulArticlesCard/UsefulArticlesCard";
+import Spoilers from "./spoilers/Spoilers";
+import Reviews from "./reviews/Reviews";
+import Video from "./video/Video";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
@@ -11,7 +14,7 @@ import { Pagination, Navigation, Scrollbar, Autoplay } from "swiper";
 import "swiper/css/autoplay";
 
 function Main() {
-  const [isShowModal, setIsShowModal] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [data, setData] = useState(false);
   const mainData = data?.main;
 
@@ -38,9 +41,9 @@ function Main() {
                 prevEl: ".swiper-button--prev",
               }}
             >
-              {mainData?.slider?.map((i) => (
+              {mainData?.slider?.map((item, index) => (
                 <SwiperSlide>
-                  <img src={i.url} alt={i.title} />
+                  <img key={index.id} src={item.url} alt={item.title} />
                 </SwiperSlide>
               ))}
               <div className="swiper__navigation">
@@ -61,15 +64,15 @@ function Main() {
                 <h1 className="main-content__title">{mainData?.title}</h1>
                 <button
                   className="main-content__btn"
-                  onClick={() => setIsShowModal((prev) => !prev)}
+                  onClick={() => setIsModalOpen(true)}
                 >
                   {mainData?.button}
                 </button>
               </div>
               <div className="main-social">
-                {mainData?.social?.map((i) => (
-                  <NavLink className="main-social__link" to={i.href}>
-                    <img src={i.url} alt={i.title} />
+                {mainData?.social?.map((item, index) => (
+                  <NavLink key={index.id} className="main-social__link" to={item.href}>
+                    <img src={item.url} alt={item.title} />
                   </NavLink>
                 ))}
               </div>
@@ -103,6 +106,8 @@ function Main() {
         </div>
       </section>
 
+      <Video src={mainData?.video} />
+
       <section className="quote">
         <div className="container container--middle">
           <div className="quote__inner">
@@ -130,7 +135,7 @@ function Main() {
         </div>
       </section>
 
-      <MailForm title="Contact us" subtitle="Do you have any questions?" />
+      <MailForm title="Contact us" subtitle="Do you have any questions?" />      
 
       <section className="useful-articles">
         <div className="container container--middle">
@@ -145,13 +150,22 @@ function Main() {
           <div className="useful-articles__cards">
           {mainData?.usefulArticles?.cards?.map((item, index) => (
                 <UsefulArticlesCard key={index} item={item} />
-
             ))}
           </div>
         </div>
       </section>
 
-      {isShowModal && <Modal />}
+      <Reviews />
+
+      <Spoilers />
+
+
+      {isModalOpen && 
+        <Modal 
+          className={isModalOpen ? 'open' : 'close'}
+          onClose={() => setIsModalOpen(false)} 
+        />
+      }
     </>
   );
 }

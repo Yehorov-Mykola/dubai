@@ -1,6 +1,6 @@
 import "./modal.scss";
 import Button from "../button/Button";
-import React, { useState } from "react";
+import React from "react";
 import useOutsideClick from "../../assets/hooks/useOutsideClick";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";

@@ -1,5 +1,4 @@
 @import './../../assets/consts/colors.scss';
-@import './../../assets/consts/colors.scss';
 
 .expertise {
     margin-bottom: 90px;
@@ -51,7 +50,8 @@
         height: 150px;
         z-index: 3;
 
-    }
+    }    
+    
     & .swiper-pagination-bullet {
         opacity: 100% !important;
         background-color: transparent;

@@ -1,7 +1,7 @@
 import "./latestProgect.scss";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Card from "../card/Card";
+import Card from "./card/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination, Scrollbar } from "swiper";
@@ -18,13 +18,8 @@ function LatestProgect({ title }) {
     axios
       .get("articles.json")
       .then(function (response) {
-        //console.log(response.data);
         setData(response.data);
       })
-      .catch(function (error) {
-        console.log(error);
-      })
-      .finally(function () {});
   }, []);
 
   useEffect(() => {

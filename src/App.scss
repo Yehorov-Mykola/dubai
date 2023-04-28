@@ -9,6 +9,7 @@ body{
   font-family: "Gilroy", serif;
   font-weight: 400;
   background-color: $color-dark;
+  color: $color-white;
 }
 
 a{
@@ -19,9 +20,15 @@ a{
   margin: 0px auto;
   padding: 0 10px;
   max-width: 1800px;
-  width: 100%;
+  width: 100%;  
+
+  &--reviews{
+    overflow-x: hidden;
+    min-height: 490px;
+  }
   &--middle{
     max-width: 1110px;
+    overflow: visible;
   }
   &--narrow{
     max-width: 730px;

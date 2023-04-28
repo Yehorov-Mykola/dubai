@@ -1,0 +1,127 @@
+@import './../../assets/mixins/mixins.scss';
+@import './../../assets/consts/colors.scss';
+
+
+.blog {
+    padding-top: 180px;
+    margin-bottom: 170px;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 70px;
+
+    }
+    &__up
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__form{        
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            background-image: url(./../../../public/img/svg/search.svg);
+            background-repeat: no-repeat;
+            height: 30px;
+            width: 30px;
+            bottom: 30%;
+            right: 22px;
+        }
+    }
+    &__input{
+        width: 815px;
+        padding: 25px 60px 25px 20px;
+        background-color: $color-dark;        
+        display: block;
+        color: $color-white;
+        line-height: 26px;
+        font-size: 16px;
+        outline: none;
+        border: 1px solid $color-gray;
+
+        
+        &::placeholder{
+            color: $color-gray;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    font-size: 1.2rem;
+    gap: 5px;
+    line-height: 17px;
+    font-size: 14px;
+    padding: 4px 0;
+    list-style: none;
+
+    .page-num {
+        padding: 8px 15px;
+        cursor: pointer;
+        font-weight: 400;
+        transition: all .3s;
+
+        &__prev,
+        &__next {
+            position: relative;
+            color: transparent;
+            margin: 0 10px;
+            &::after {
+
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0;
+                width: 10px;
+                height: 17px;
+                background-image: url(./../../../public/img/svg/arrow-pag-white.svg);
+            }
+            &:hover::after {
+                cursor: pointer;
+            }
+        }
+        &__prev {
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+        &__prev.disabled-num,
+        &__next.disabled-num {
+            position: relative;
+            &:hover::after {
+                cursor:default;
+            }
+
+            &::after {
+                background-image: url(./../../../public/img/svg/arrow-pag-gray.svg);
+            }
+        }
+        &__prev {
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+
+    }
+
+
+    .page-num:hover {
+        background-color: $color-yellow;
+        color: #eee;
+    }
+
+    .active-num {
+        color: $color-yellow;
+    }
+
+    .break-points {
+        color: $color-gray;
+    }
+}

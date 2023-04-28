@@ -43,8 +43,9 @@
         margin-right: 350px;
     }
 }
-.latest-progect .swiper{
+.reviews .swiper{
     position: static!important;
+    overflow: visible!important;
 
     &-pagination{
         bottom: -95px!important;
@@ -59,11 +60,17 @@
             background-color: $color-yellow!important;
         }
     }
+    &-slide{
+        opacity: 0.3;
+        transition: all .3s;
+        &-active,
+        &-next{
+            opacity: 1;
+            margin-top: 20px;
+        }
+    }
 }
 
-.slider-wrapper{
-    position: relative;
-    overflow: visible;
-}
+
 
 
