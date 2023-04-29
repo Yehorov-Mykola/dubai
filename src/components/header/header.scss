@@ -70,6 +70,10 @@
          }
     }
 
+    &__phone{
+        color: $color-white;
+    }
+
     &__btn {
         display: none;
         background-color: transparent;

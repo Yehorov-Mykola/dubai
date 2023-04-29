@@ -1,0 +1,14 @@
+@import './../../assets/mixins/mixins.scss';
+@import './../../assets/consts/colors.scss';
+
+
+.contact {
+    padding-top: 180px;
+    margin-bottom: 170px;
+
+    &__map{
+        &-wrapper{
+            position: relative;
+        }
+    }
+}

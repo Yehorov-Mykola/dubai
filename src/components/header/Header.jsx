@@ -36,6 +36,8 @@ function Header() {
     i18n.changeLanguage(language);
   }
 
+  const [t] = useTranslation(["translation", "customFile"]);
+
 
   return (
     <>
@@ -63,7 +65,7 @@ function Header() {
                     }`}
                     onClick={() => setIsShowSubmenu((prev) => !prev)}
                   >
-                    {submenuBtnData}
+                    {t("customFile:title")}
                   </button>
                   {isShowSubmenu && (
                     <ul className="submenu">
@@ -97,9 +99,9 @@ function Header() {
                   </button>
                 ))}
               </div>
-              <a class="menu__phone" href={phoneData?.href}>
+              <NavLink className="menu__phone" to={phoneData?.href}>
                 {phoneData?.title}
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
