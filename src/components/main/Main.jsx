@@ -12,11 +12,15 @@ import { NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Scrollbar, Autoplay } from "swiper";
 import "swiper/css/autoplay";
+import i18n from "./../../_i18n/_i18n";
+import { useTranslation } from "react-i18next";
 
 function Main() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [data, setData] = useState(false);
   const mainData = data?.main;
+
+  const [t] = useTranslation(["translation"]);
 
   useEffect(() => {
     axios.get("/localization/en.json").then(function (response) {
@@ -49,10 +53,10 @@ function Main() {
               <div className="swiper__navigation">
                 <div className="swiper-buttons">
                   <span className="swiper-button swiper-button--prev">
-                    {mainData?.prevBtn}
+                    {t("main.prevBtn")}
                   </span>
                   <span className="swiper-button swiper-button--next">
-                    {mainData?.nextBtn}
+                  {t("main.nextBtn")}
                   </span>
                 </div>
                 <div className="main-swiper-pagination"></div>
@@ -60,13 +64,13 @@ function Main() {
             </Swiper>
             <div className="main-content">
               <div className="main-content__text">
-                <p className="main-content__descr">{mainData?.subtitle}</p>
-                <h1 className="main-content__title">{mainData?.title}</h1>
+                <p className="main-content__descr">{t("main.subtitle")}</p>
+                <h1 className="main-content__title" dangerouslySetInnerHTML={{__html: t("main.title")}}></h1>
                 <button
                   className="main-content__btn"
                   onClick={() => setIsModalOpen(true)}
                 >
-                  {mainData?.button}
+                  {t("main.button")}
                 </button>
               </div>
               <div className="main-social">
@@ -85,23 +89,12 @@ function Main() {
 
       <section className="expertise">
         <div className="container container--narrow">
-          <h2 className="expertise__title">Our expertise</h2>
+          <h2 className="expertise__title">{t("main.expertise.title")}</h2>
           <h3 className="expertise__subtitle">
-            "The best apartment in Dubai" we will find your dream
+            {t("main.expertise.subtitle")}
           </h3>
           <p className="expertise__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            nibh massa, euismod ut libero id, blandit posuere augue. Morbi porta
-            volutpat diam egestas ultrices. Phasellus tempus fringilla neque,
-            nec viverra orci tristique vel. In efficitur vehicula magna, varius
-            pellentesque nisl vehicula vel. Aenean vel sem ac elit commodo
-            finibus in nec massa. Nulla facilisi. Nulla vestibulum venenatis
-            sollicitudin. Etiam auctor mollis justo eu tincidunt. Aliquam varius
-            varius tortor. Cras id venenatis sem. Quisque ut risus ex. Sed et
-            tempor massa. Praesent ac eros hendrerit, congue justo ac, molestie
-            urna. Fusce nec neque vitae dolor dapibus elementum. Maecenas nec
-            orci quis sem condimentum dapibus varius a lorem. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit.
+            {t("main.expertise.text")}
           </p>
         </div>
       </section>

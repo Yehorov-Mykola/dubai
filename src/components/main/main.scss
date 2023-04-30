@@ -138,7 +138,7 @@
     &__text {
         margin: 270px 0 0 350px;
         color: $color-white;
-        max-width: 750px;
+        max-width: 810px;
         padding: 45px 0 45px 28px;
         border-left: 4px solid $color-yellow;
         position: relative;
@@ -175,6 +175,9 @@
         font-family: 'Space Grotesk';
         text-transform: capitalize;
         margin-bottom: 22px;
+        span{
+            color: $color-yellow;
+        }
     }
 
     &__btn {

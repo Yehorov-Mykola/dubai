@@ -53,7 +53,7 @@
   },
   "main":
   {
-    "title": "Welcome home to luxury",
+    "title": "Welcome home <span>to</span> luxury",
     "subtitle":"Lorem ipsum",
     "button": "Book a consultation",
     "prevBtn": "prev",
@@ -72,6 +72,12 @@
         "url": "./img/main-bg/main-slider-3.jpg"
       }
     ],
+    "expertise":
+    {
+      "title": "Our expertise",
+      "subtitle":"The best apartment in Dubai we will find your dream",
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh massa, euismod ut libero id, blandit posuere augue. Morbi portavolutpat diam egestas ultrices. Phasellus tempus fringilla neque, nec viverra orci tristique vel. In efficitur vehicula magna, variuspellentesque nisl vehicula vel. Aenean vel sem ac elit commodo finibus in nec massa. Nulla facilisi. Nulla vestibulum venenatis sollicitudin. Etiam auctor mollis justo eu tincidunt. Aliquam varius varius tortor. Cras id venenatis sem. Quisque ut risus ex. Sed et tempor massa. Praesent ac eros hendrerit, congue justo ac, molestie urna. Fusce nec neque vitae dolor dapibus elementum. Maecenas necorci quis sem condimentum dapibus varius a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
     "social":[
       {
         "title": "facebook",

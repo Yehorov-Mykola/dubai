@@ -23,99 +23,92 @@ function Header() {
   const submenuBtnData = data.header?.submenuBtn;
 
   useEffect(() => {
-    axios
-      .get("/localization/en.json")
-      .then(function (response) {
-        setData(response.data);
-      })
+    axios.get("/locales/en/translation.json").then(function (response) {
+      setData(response.data);
+    });
   }, []);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
-  function changeLanguageOnClick(language) {
-    i18n.changeLanguage(language);
-  }
-
-  const [t] = useTranslation(["translation", "customFile"]);
-
+  const [t] = useTranslation(["translation"]);
 
   return (
     <>
-    <header className="header">
-      <div className="container">
-        <div className="header__inner">
-          <NavLink to={logoData?.href} className="logo">
-            {logoData?.title}{" "}
-            <span className="logo__subtitle">{logoData?.subtitle}</span>
-          </NavLink>
-          <div className="header__right">
-            <nav className="menu">
-              <button
-                class={`menu__btn menu__btn${isOpen ? "--active" : ""}`}
-                onClick={toggleDropdown}
-              >
-                <span class="menu__btn-line"></span>
-              </button>
+      <header className="header">
+        <div className="container">
+          <div className="header__inner">
+            <NavLink to={logoData?.href} className="logo">
+              {logoData?.title}{" "}
+              <span className="logo__subtitle">{logoData?.subtitle}</span>
+            </NavLink>
+            <div className="header__right">
+              <nav className="menu">
+                <button
+                  class={`menu__btn menu__btn${isOpen ? "--active" : ""}`}
+                  onClick={toggleDropdown}
+                >
+                  <span class="menu__btn-line"></span>
+                </button>
 
-              <ul class={`menu__list ${isOpen ? "menu__list--open" : ""}`}>
-                <li class="menu__list-item ">
-                  <button
-                    class={`menu__link menu__link-btn ${
-                      isShowSubmenu ? "menu__link-btn--active" : ""
-                    }`}
-                    onClick={() => setIsShowSubmenu((prev) => !prev)}
-                  >
-                    {t("customFile:title")}
-                  </button>
-                  {isShowSubmenu && (
-                    <ul className="submenu">
-                      {submenuData?.map((item, index) => (
-                        <li class="submenu__item">
-                          <NavLink key={index.id} className="submenu__link" to={item.href}>
-                            {item.title}
-                          </NavLink>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-                {menuData?.map((item, index) => (
-                  <li key={index.id} class="menu__list-item">
-                    <NavLink className="menu__link" to={item.href}>
-                      {item.title}
-                    </NavLink>
+                <ul class={`menu__list ${isOpen ? "menu__list--open" : ""}`}>
+                  <li class="menu__list-item ">
+                    <button
+                      class={`menu__link menu__link-btn ${
+                        isShowSubmenu ? "menu__link-btn--active" : ""
+                      }`}
+                      onClick={() => setIsShowSubmenu((prev) => !prev)}
+                    >
+                      {t("header.submenuBtn")}
+                    </button>
+                    {isShowSubmenu && (
+                      <ul className="submenu">
+                        {JSON.parse(t("header.submenu")).map((item, index) => (
+                          <li class="submenu__item">
+                            <NavLink
+                              key={index.id}
+                              className="submenu__link"
+                              to={item.href}
+                            >
+                              {item.title}
+                            </NavLink>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
-                ))}
-              </ul>
-            </nav>
-            <div className="header__right-options">
-              <Button onClick={() => setIsModalOpen(true)}>
-                {buttonData}
-              </Button>
-              <div className="menu__languages">
-                {langData?.map((item, index) => (
-                  <button key={index} className="menu__language" onClick={() => changeLanguageOnClick(item.btn)}>
-                    {item.title}
-                  </button>
-                ))}
+                  {menuData?.map((item, index) => (
+                    <li key={index.id} class="menu__list-item">
+                      <NavLink className="menu__link" to={item.href}>
+                        {item.title}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              <div className="header__right-options">
+                <Button onClick={() => setIsModalOpen(true)}>
+                {t("header.button")}
+                </Button>
+                <div className="menu__languages">
+                  <button className="menu__language" onClick={() => i18n.changeLanguage("en")}>EN</button>
+                  <button className="menu__language" onClick={() => i18n.changeLanguage("ua")}>UA</button>
+                </div>
+                <NavLink className="menu__phone" to={phoneData?.href}>
+                  {phoneData?.title}
+                </NavLink>
               </div>
-              <NavLink className="menu__phone" to={phoneData?.href}>
-                {phoneData?.title}
-              </NavLink>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    {isModalOpen && 
-        <Modal 
-          className={isModalOpen ? 'open' : 'close'}
-          onClose={() => setIsModalOpen(false)} 
+      {isModalOpen && (
+        <Modal
+          className={isModalOpen ? "open" : "close"}
+          onClose={() => setIsModalOpen(false)}
         />
-      }
+      )}
     </>
-    
   );
 }
 

@@ -34,21 +34,21 @@ function Contact() {
             ></iframe>
             <div className="map-info">
               <h3 className="map-info__country">
-                Dubai, <span className="map-info__country">UAE</span>
+                Dubai, <span>UAE</span>
               </h3>
               <p className="map-info__adress">
                 269 King Str, 05th Floor, Utral Hosue Building, Dubai, VIC 3000,
                 UAE.
               </p>
-              <NavLink class="map-info__phone" to="/">
+              <NavLink className="map-info__phone" to="/">
                 +99 (0) 344 956 4050
               </NavLink>
               <div className="map-info__contact">
-                <p className="map-info__contact-title">
+                <p className="map-info__contact-item">
                   Email: <span>info@sparch.co</span>
                 </p>
-                <p className="map-info__contact-title">Follow us:</p>
-                <p className="map-info__contact-title">
+                <p className="map-info__contact-item">Follow us:</p>
+                <p className="map-info__contact-item">
                   Email: <span>info@sparch.co</span>
                 </p>
               </div>

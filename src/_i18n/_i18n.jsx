@@ -29,7 +29,8 @@ i18n
      for all options read: https://www.i18next.com/overview/configuration-options
     */
   .init({
-    lng: "ee",
+    lng: "en",
+    fallbackLng: "en",
     saveMissing: true, // send not translated keys to endpoint
     debug: true,
     whitelist: languages,

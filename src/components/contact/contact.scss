@@ -9,6 +9,58 @@
     &__map{
         &-wrapper{
             position: relative;
+            margin-top: 90px;
+        }
+    }
+}
+
+.map-info{
+    position: absolute;
+    min-height: 605px;
+    top: 80px;
+    left: 345px;
+    width: 544px;
+    background-color: $color-dark;
+    padding: 80px;
+
+    &__country{
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 700;
+        margin-bottom: 33px;
+
+        span{
+            color: $color-yellow;
+        }
+    }
+    &__adress{
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'Work Sans';
+        margin-bottom: 60px;
+        color: $color-gray;
+    }
+    &__phone{
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 700;
+        margin-bottom: 90px;
+        color: $color-white;
+        display: inline-block;
+    }
+    &__contact-item{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'Work Sans';
+        margin-bottom: 30px;
+        
+        span{
+            font-weight: 400;
+            color: $color-gray;
+        }
+        &:last-child{
+            margin-bottom: 0px;
         }
     }
 }
