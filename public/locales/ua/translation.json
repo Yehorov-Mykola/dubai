@@ -107,80 +107,80 @@
     ],
     "quote":
     {
-      "text": "Don't limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve",
-      "author": "Mary Kay Ash"
+      "text": "Не обмежуй себе. Багато людей обмежують себе тим, що, на їхню думку, можуть зробити. Ти можеш зайти настільки далеко, наскільки тобі дозволяє твій розум. У що ти віриш, пам’ятай, ти можеш цього досягти",
+      "author": "Мері Кей Еш"
     },
     "mainApartments":[
       {
         "title": "apartment-1",
-        "text": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.",
+        "text": "Це зручний інструмент для бізнесу. Це допомагає намітити візуальні елементи в документ або презентацію, наприклад, друкарня, шрифт, або макет. Lorem Ipsum в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше. У той час як Lorem Ipsum все ще нагадує класичну латину, він насправді не має ніякого значення.",
         "url": "./img/main-apartments/ap-1.jpg"
       },
       {
         "title": "apartment-2",
-        "text": "Vivamus non diam vel lorem efficitur mattis in gravida ante. Ut ullamcorper dapibus ante, eu tincidunt orci feugiat vel. Curabitur eget lectus lectus. Pellentesque malesuada, felis at accumsan interdum, nisl mi fermentum est, eu suscipit dui lorem a dui. Aliquam rhoncus risus in leo vestibulum efficitur. Suspendisse tortor quam, faucibus a lacinia a, bibendum vitae quam. Suspen disse et metus et orci rutrum dictum eu eu nibh. Suspendisse blandit in diam in rhoncus. Nam volutpat hendrerit enim, sed aliquet quam gravida at. Nullam dictum sagittis nisi, eu porta sem mollis eu. Nulla faucibus sed ipsum sed sodales. Curabitur varius iaculis felis, in aliquet sem suscipit quis. Ut vulputate, magna ac bibendum elementum, nulla magna tincidunt urna, a venenatis dolor arcu sed leo. ",
+        "text": "У професійному контексті це часто буває, що приватні або корпоративні клієнти Corder публікацію, які будуть зроблені і представлені з фактичний зміст все ще не готовий. Подумайте про прес- блозі, що наповнилися змістом погодинна в день буде жити. Однак рецензенти схильні відволікатися на зрозумілій змісту, скажімо, випадкового тексту, скопійованого з газети або в інтернеті., Швидше за все, зосередитися на тексті, не звертаючи уваги на макет і його елементів.",
         "url": "./img/main-apartments/ap-2.jpg"
       }
     ],
     "usefulArticles":{
-      "title": "Useful articles",
+      "title": "Корисні статті",
       "link": {
-        "title": "View all articles",
+        "title": "Дивитись всі статті",
         "href": "/"
       },
       "cards":[
         {
-          "title": "Discover Hotels",
-          "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such",
-          "date": "April 23, 2023",
-          "btn": "Learn more",
+          "title": "Відкрийте готелі",
+          "text": "Проекти для багатьох великих вітчизняних та іноземних корпорацій, підприємств у багатьох сферах",
+          "date": "Квітень 23, 2023",
+          "btn": "Детальніше",
           "url": "./img/useful-articles/card-1.jpg",
           "link": "/"
         },
         {
-          "title": "Discover Architecture",
-          "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such",
-          "date": "Jule 03, 2022",
-          "btn": "Learn more",
+          "title": "Відкрийте архітектуру",
+          "text": "Проекти для багатьох великих вітчизняних та іноземних корпорацій, підприємств у багатьох сферах",
+          "date": "Липень 03, 2022",
+          "btn": "Детальніше",
           "url": "./img/useful-articles/card-2.jpg",
           "link": "/"
         },
         {
-          "title": "Discover Dubai",
-          "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such",
-          "date": "March 09, 2022",
-          "btn": "Learn more",
+          "title": "Відкрийте Дубаї",
+          "text": "Проекти для багатьох великих вітчизняних та іноземних корпорацій, підприємств у багатьох сферах",
+          "date": "Березень 09, 2022",
+          "btn": "Детальніше",
           "url": "./img/useful-articles/card-3.jpg",
           "link": "/"
         }
       ]
     },
     "faq":{
-      "title": "FAQ",
+      "title": "Часті питання",
       "spoilers":[
         {
-          "title": "The largest and oldest Quotations Page on the Web with about 30 categories",
-          "text": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.",
+          "title": "Найбільша та найстаріша сторінка цитат в Інтернеті з приблизно 30 категоріями",
+          "text": "",
           "id": "spoiler-1"
         },
         {
-          "title": "A huge collection of inspirational quotes, thoughts of greatest minds in history",
-          "text": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus.",
+          "title": "Величезна колекція надихаючих цитат, думок найвидатніших умів в історії",
+          "text": "Щоб ви зрозуміли, звідки виникає це хибне уявлення людей, цуратись насолоди і вихваляти страждання, я розкрию перед вами всю картину і роз’ясню, що саме говорив цей чоловік, який відкрив істину, якого я б назвав зодчим щасливого життя. Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки через те, що це насолоди, але лише через те, що тих, хто не вміє розумно вдаватися насолоді, осягають великі страждання.",
           "id": "spoiler-2"
         },
         {
-          "title": "Quotations from the great works of literature",
-          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+          "title": "Цитати з великих творів літератури",
+          "text": "Якщо скористатися найпростішим прикладом, то хто з нас став би займатися якими б то не було тяжкими фізичними вправами, якщо б це не приносило з собою якоїсь користі? І хто міг би по справедливості дорікнути прагнення до насолоди, яке не несло б з собою ніяких неприємностей, або того, хто уникав би такого страждання, яке не приносило б з собою ніякої насолоди?",
           "id": "spoiler-3"
         },
         {
-          "title": "Read quotes and sayings from famous people in history",
-          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "title": "Прочитайте цитати та вислови відомих людей в історії",
+          "text": "Давно встановлено, що читач відволікатиметься на читабельний вміст сторінки, дивлячись на її макет. Сенс використання Lorem Ipsum полягає в тому, що він має більш-менш нормальний розподіл літер, на відміну від використання «Вміст тут, вміст тут», що робить його схожим на читабельну англійську мову.",
           "id": "spoiler-4"
         },
         {
-          "title": "The largest and oldest Quotations Page on the Web with about 30 categories",
-          "text": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.",
+          "title": "Найбільша та найстаріша сторінка цитат в Інтернеті з приблизно 30 категоріями",
+          "text": "Вони винні так само, як і ті, хто через душевну слабкість, тобто через бажання уникнути страждань і болю відмовляється від виконання свого обов’язку. Втім, тут дуже легко і просто провести відмінності, тому що, коли ми вільні і нам надана повна можливість вибору бажаного, коли ніщо не заважає нам робити те, що нам більше подобається, будь яку насолоду слід визнати бажаним, а будь-яке страждання огидним.",
           "id": "spoiler-5"
         }
       ]

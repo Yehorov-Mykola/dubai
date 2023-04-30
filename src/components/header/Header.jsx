@@ -13,14 +13,13 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isShowSubmenu, setIsShowSubmenu] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState("All");
 
-  const menuData = data.header?.menu;
   const logoData = data.header?.logo;
-  const buttonData = data.header?.button;
+
   const phoneData = data.header?.phone;
   const langData = data.header?.lang;
-  const submenuData = data.header?.submenu;
-  const submenuBtnData = data.header?.submenuBtn;
+
 
   useEffect(() => {
     axios.get("/locales/en/translation.json").then(function (response) {
@@ -62,7 +61,7 @@ function Header() {
                     </button>
                     {isShowSubmenu && (
                       <ul className="submenu">
-                        {JSON.parse(t("header.submenu")).map((item, index) => (
+                        {t('header.submenu', { returnObjects: true }).map((item, index) => (
                           <li class="submenu__item">
                             <NavLink
                               key={index.id}
@@ -76,7 +75,7 @@ function Header() {
                       </ul>
                     )}
                   </li>
-                  {menuData?.map((item, index) => (
+                  {t('header.menu', { returnObjects: true }).map((item, index) => (
                     <li key={index.id} class="menu__list-item">
                       <NavLink className="menu__link" to={item.href}>
                         {item.title}
@@ -90,8 +89,11 @@ function Header() {
                 {t("header.button")}
                 </Button>
                 <div className="menu__languages">
-                  <button className="menu__language" onClick={() => i18n.changeLanguage("en")}>EN</button>
-                  <button className="menu__language" onClick={() => i18n.changeLanguage("ua")}>UA</button>
+                  {langData?.map((item, index) => (
+                  <button key={index} className={`menu__language ${activeItem === item.title ? "menu__language--active" : "" }`} href={item.href} onClick={() => {i18n.changeLanguage(item.btn); setActiveItem(item.title)}}>
+                    {item.title}
+                  </button>
+                ))}
                 </div>
                 <NavLink className="menu__phone" to={phoneData?.href}>
                   {phoneData?.title}
