@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination, Scrollbar } from "swiper";
 import "swiper/css/pagination";
+import { useTranslation } from "react-i18next";
 
 function LatestProgect({ title }) {
   const [data, setData] = useState([]);
@@ -13,6 +14,7 @@ function LatestProgect({ title }) {
   const [categoriess, setCategoriess] = useState([]);
   const [activeItem, setActiveItem] = useState("All");
   const [filters, setFilters] = useState("All");
+  const [t] = useTranslation(["translation"]);
 
   useEffect(() => {
     axios
@@ -35,29 +37,29 @@ function LatestProgect({ title }) {
   }, []);
 
   const filterByCategory = () => {
-    if (filters !== "All") {
-      setFilteredData(data.filter((el) => el.category === filters));
+    if (filters !== "All"  && filters !== "Всі") {
+      setFilteredData(t("latestProgects.articles", { returnObjects: true }).filter((el) => el.category === filters));
     } else {
-      setFilteredData(data);
+      setFilteredData(t("latestProgects.articles", { returnObjects: true }));
     }
   };
 
   useEffect(() => {
     filterByCategory();
-  }, [filters, data]);
+  }, [filters, data, t("latestProgects.title")]);
 
   return (
     <section className="latest-progect">
       <div className="container">
         <div className="latest-progect__up">
-          <h2 className="latest-progect__title">{title}</h2>
+          <h2 className="latest-progect__title">{t("latestProgects.title")}</h2>
           <div className="category__wrapper">
-            {categoriess.map((item, index) => (
+            {t("latestProgects.categories", { returnObjects: true }).map((item, index) => (
               <button
                 className={`category ${
                   activeItem === item.title ? "category--active" : ""
                 }`}
-                key={index.id}
+                key={index}
                 onClick={() => {
                   setActiveItem(item.title);
                   setFilters(item.title);
@@ -81,8 +83,8 @@ function LatestProgect({ title }) {
             scrollbar={{ draggable: true }}
           >
             {filteredData.map((item, index) => (
-              <SwiperSlide>
-                <Card key={index} item={item} />
+              <SwiperSlide key={index}>
+                <Card item={item} />
               </SwiperSlide>
             ))}
           </Swiper>

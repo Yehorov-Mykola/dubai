@@ -8,7 +8,7 @@ function UsefulArticlesCard({ item }) {
         <div className="useful-articles__card-inner">
           <h3 className="useful-articles__title">{item.title}</h3>
         </div>        
-        <div class="articles-card-info">
+        <div className="articles-card-info">
           <p className="articles-card-info__date">{item.date}</p>
           <h3 className="useful-articles__title">{item.title}</h3>
           <p className="articles-card-info__text">

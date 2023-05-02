@@ -4,29 +4,27 @@ import React from "react";
 import useOutsideClick from "../../assets/hooks/useOutsideClick";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
 
-const SignupSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-  phone: Yup.string()
-    .min(6, "Too Short!")
-    .max(15, "Too Long!")
-    .required("Required"),
-});
-
-function Modal({ onClose }) {
+function Modal({ onClose, opened }) {
   const { ref } = useOutsideClick(onClose);
+  const [t] = useTranslation(["translation"]);
+
+  const SignupSchema = Yup.object().shape({
+    name: Yup.string().min(2, t("modal.short")).required(t("modal.required")),
+    phone: Yup.string().min(6, t("modal.short")).required(t("modal.required")),
+  });
 
   return (
     <>
-      <div className="modal__wrapper">
-        <div className="modal" ref={ref}>
-          <h2 className="modal__title">Leave your contacts</h2>
-          <p className="modal__subtitle">
-            we will contact you within three hours
-          </p>
+      <div
+        className={`modal__wrapper ${
+          opened ? "modal__wrapper--opened" : "modal__wrapper--closed"
+        }`}
+      >
+        <div className="modal modal-box" ref={ref}>
+          <h2 className="modal__title">{t("modal.title")}</h2>
+          <p className="modal__subtitle">{t("modal.subtitle")}</p>
 
           <Formik
             initialValues={{
@@ -35,12 +33,13 @@ function Modal({ onClose }) {
             }}
             validate={(data) => {
               const errors = {};
-              if (/[0-9]/.test(data.name)) errors.name = "Error: wrong name";
+              if (/[0-9]/.test(data.name)) errors.name = t("modal.error");
               return errors;
             }}
             validationSchema={SignupSchema}
             onSubmit={(values) => {
               console.log(values);
+              onClose();
             }}
           >
             {({ errors, touched }) => (
@@ -52,7 +51,7 @@ function Modal({ onClose }) {
                     }`}
                     name="name"
                     type="text"
-                    placeholder="Name"
+                    placeholder={t("modal.namePlaceholder")}
                   />
                   {errors.name && touched.name ? (
                     <div>{errors.name}</div>
@@ -61,17 +60,19 @@ function Modal({ onClose }) {
                 <label className="form__label">
                   <Field
                     className={`form__input ${
-                      errors.email ? "form__input--invalid" : ""
+                      errors.phone ? "form__input--invalid" : ""
                     }`}
                     name="phone"
                     type="tel"
-                    placeholder="Phone"
+                    placeholder={t("modal.phonePlaceholder")}
                   />
                   {errors.phone && touched.phone ? (
                     <div>{errors.phone}</div>
                   ) : null}
                 </label>
-                <Button submit>Send</Button>
+                <div className="modal__btn-wrapper">
+                  <Button submit>{t("modal.btn")}</Button>
+                </div>
               </Form>
             )}
           </Formik>

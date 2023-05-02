@@ -1,27 +1,45 @@
 import { useRef, useState } from "react";
-import "./video.scss"
+import "./video.scss";
 
 function Video() {
   const [isBtnClicked, setIsBtnClicked] = useState(true);
-  console.log('btnClicked:', isBtnClicked)
   const videoRef = useRef(null);
   const handlePlayBtnClick = () => {
     videoRef.current.play();
-    setIsBtnClicked(!isBtnClicked)};
-    
-    
-  return ( 
+    setIsBtnClicked(!isBtnClicked);
+  };
+
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
+  return (
     <section className="video">
       <div className="container">
-        <video className={`video__player ${isBtnClicked ? "" : "video__player--active"}`}ref={videoRef} controls>
-          <source src="./video/hotels.mp4" type="video/mp4"/>
-        </video>
-        {
-          isBtnClicked && <button className="video__btn" onClick={handlePlayBtnClick} />
-        }        
-      </div>    
-    </section>
+        <div className="video__wrapper">
+          {isVideoOpen && (
+            <iframe
+              width="100%"
+              height="920"
+              src="https://www.youtube.com/embed/QbFdXKDaYng?&autoplay=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          )}
 
+          {!isVideoOpen && (
+            <>
+              <img
+                src="./img/video.jpg"
+                alt=""
+                width="100%"
+                height="920"
+              />
+              <button className="video__btn" onClick={() => setIsVideoOpen(true)}/>
+            </>
+          )}
+        </div>
+      </div>
+    </section>
   );
 }
 export default Video;

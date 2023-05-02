@@ -76,7 +76,7 @@
     {
       "title": "Наша експертиза",
       "subtitle":"Найкраща квартира в Дубаї ми знайдемо вашу мрію",
-      "text":"Lorem Ipsum в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше. У той час як Lorem Ipsum все ще нагадує класичну латину, він насправді не має ніякого значення. Як текст Цицерона не містить літери K, W, або Z, чужі латина, ці та інші часто вставляється випадково імітувати типографський Зовнішність європейських мовах, як і орграфов будуть знайдено в оригіналі."
+      "text":"Лорем в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше. У той час як Лорем все ще нагадує класичну латину, він насправді не має ніякого значення. Як текст Цицерона не містить літери K, W, або Z, чужі латина, ці та інші часто вставляється випадково імітувати типографський Зовнішність європейських мовах, як і орграфов будуть знайдено в оригіналі."
     },    
     "social":[
       {
@@ -113,7 +113,7 @@
     "mainApartments":[
       {
         "title": "apartment-1",
-        "text": "Це зручний інструмент для бізнесу. Це допомагає намітити візуальні елементи в документ або презентацію, наприклад, друкарня, шрифт, або макет. Lorem Ipsum в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше. У той час як Lorem Ipsum все ще нагадує класичну латину, він насправді не має ніякого значення.",
+        "text": "Це зручний інструмент для бізнесу. Це допомагає намітити візуальні елементи в документ або презентацію, наприклад, друкарня, шрифт, або макет. Лорем в основному частиною латинського тексту за класичною автор і філософа Цицерона. Це слова і букви були змінені додаванням або видаленням, так навмисно роблять його зміст безглуздо, це не є справжньою, правильно чи зрозумілою Латинської більше. У той час як Лорем все ще нагадує класичну латину, він насправді не має ніякого значення.",
         "url": "./img/main-apartments/ap-1.jpg"
       },
       {
@@ -126,13 +126,13 @@
       "title": "Корисні статті",
       "link": {
         "title": "Дивитись всі статті",
-        "href": "/"
+        "href": "/blog"
       },
       "cards":[
         {
           "title": "Відкрийте готелі",
           "text": "Проекти для багатьох великих вітчизняних та іноземних корпорацій, підприємств у багатьох сферах",
-          "date": "Квітень 23, 2023",
+          "date": " 23 Квітеня, 2023",
           "btn": "Детальніше",
           "url": "./img/useful-articles/card-1.jpg",
           "link": "/"
@@ -140,7 +140,7 @@
         {
           "title": "Відкрийте архітектуру",
           "text": "Проекти для багатьох великих вітчизняних та іноземних корпорацій, підприємств у багатьох сферах",
-          "date": "Липень 03, 2022",
+          "date": "03 липеня, 2022",
           "btn": "Детальніше",
           "url": "./img/useful-articles/card-2.jpg",
           "link": "/"
@@ -148,7 +148,7 @@
         {
           "title": "Відкрийте Дубаї",
           "text": "Проекти для багатьох великих вітчизняних та іноземних корпорацій, підприємств у багатьох сферах",
-          "date": "Березень 09, 2022",
+          "date": "09 березня, 2022",
           "btn": "Детальніше",
           "url": "./img/useful-articles/card-3.jpg",
           "link": "/"
@@ -160,7 +160,7 @@
       "spoilers":[
         {
           "title": "Найбільша та найстаріша сторінка цитат в Інтернеті з приблизно 30 категоріями",
-          "text": "",
+          "text": "Давно встановлено, що читач відволікатиметься на читабельний вміст сторінки, дивлячись на її макет. Сенс використання Лорем полягає в тому, що він має більш-менш нормальний розподіл літер, на відміну від використання «Вміст тут, вміст тут», що робить його схожим на читабельну українську мову.",
           "id": "spoiler-1"
         },
         {
@@ -175,7 +175,7 @@
         },
         {
           "title": "Прочитайте цитати та вислови відомих людей в історії",
-          "text": "Давно встановлено, що читач відволікатиметься на читабельний вміст сторінки, дивлячись на її макет. Сенс використання Lorem Ipsum полягає в тому, що він має більш-менш нормальний розподіл літер, на відміну від використання «Вміст тут, вміст тут», що робить його схожим на читабельну англійську мову.",
+          "text": "Давно встановлено, що читач відволікатиметься на читабельний вміст сторінки, дивлячись на її макет. Сенс використання Лорем полягає в тому, що він має більш-менш нормальний розподіл літер, на відміну від використання «Вміст тут, вміст тут», що робить його схожим на читабельну англійську мову.",
           "id": "spoiler-4"
         },
         {
@@ -185,447 +185,443 @@
         }
       ]
     },
-    "reviews":[
-      { "id": "r1",
-        "name": "Paul",
-        "position": "Owner",
-        "company": "Paul.com",
-        "link": "/",
-        "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.",
-        "url": "./img/reviews/paul.png"
-      },
-      {
-        "id": "r2",
-        "position": "Founder",
-        "company": "Apple inc.",
-        "link": "/",
-        "text": "Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing",
-        "url": "./img/reviews/robert.png"
-      },
-      {
-        "id": "r3",
-        "name": "Paul",
-        "position": "Owner",
-        "company": "Paul.com",
-        "link": "/",
-        "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.",
-        "url": "./img/reviews/paul.png"
-      },
-      {
-        "id": "r4",
-        "name": "Robert",
-        "position": "Founder",
-        "company": "Apple inc.",
-        "link": "/",
-        "text": "Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing",
-        "url": "./img/reviews/robert.png"
-      },
-      {
-        "id": "r5",
-        "name": "Paul",
-        "position": "Owner",
-        "company": "Paul.com",
-        "link": "/",
-        "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.",
-        "url": "./img/reviews/paul.png"
-      },
-      {
-        "id": "r6",
-        "name": "Robert",
-        "position": "Founder",
-        "company": "Apple inc.",
-        "link": "/",
-        "text": "Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing",
-        "url": "./img/reviews/robert.png"
-      }
-    ]
+    "reviews":{
+      "in": "в",
+      "items":[
+        { "name": "Павло",
+          "position": "Бізнесмен",
+          "company": "Paul.com",
+          "link": "/",
+          "text": "Проекти для багатьох великих вітчизняних та іноземних корпорацій, підприємств у багатьох галузях, таких як фінанси, банківська справа, харчування та напої, освіта, комунікації.",
+          "url": "./img/reviews/paul.png"
+        },
+        {
+          "name": "Ягайло",
+          "position": "Засновник",
+          "company": "Apple inc.",
+          "link": "/",
+          "text": "Заснована в 2007 році, Sparch спеціалізується на наданні інноваційних послуг, таких як дизайн веб-сайтів, ідентифікація бренду та маркетинг",
+          "url": "./img/reviews/robert.png"
+        },
+        { "name": "Павло",
+          "position": "Бізнесмен",
+          "company": "Paul.com",
+          "link": "/",
+          "text": "Проекти для багатьох великих вітчизняних та іноземних корпорацій, підприємств у багатьох галузях, таких як фінанси, банківська справа, харчування та напої, освіта, комунікації.",
+          "url": "./img/reviews/paul.png"
+        },
+        {
+          "name": "Ягайло",
+          "position": "Засновник",
+          "company": "Apple inc.",
+          "link": "/",
+          "text": "Заснована в 2007 році, Sparch спеціалізується на наданні інноваційних послуг, таких як дизайн веб-сайтів, ідентифікація бренду та маркетинг",
+          "url": "./img/reviews/robert.png"
+        },
+        { "name": "Павло",
+          "position": "Бізнесмен",
+          "company": "Paul.com",
+          "link": "/",
+          "text": "Проекти для багатьох великих вітчизняних та іноземних корпорацій, підприємств у багатьох галузях, таких як фінанси, банківська справа, харчування та напої, освіта, комунікації.",
+          "url": "./img/reviews/paul.png"
+        },
+        {
+          "name": "Ягайло",
+          "position": "Засновник",
+          "company": "Apple inc.",
+          "link": "/",
+          "text": "Заснована в 2007 році, Sparch спеціалізується на наданні інноваційних послуг, таких як дизайн веб-сайтів, ідентифікація бренду та маркетинг",
+          "url": "./img/reviews/robert.png"
+        }
+      ]
+    }    
   },
   "blog":{
-    "title": "Blog",
-    "searchPlaceholder": "Search...",
-    "blogNav": ["Main", "Services", "Rent", "Furnished Apartments in Dubai"],
+    "title": "Блог",
+    "searchPlaceholder": "Пошук...",
+    "blogNav": ["Головна", "Послуги", "Оренда", "Мебльовані апартаменти в Дубаї"],
     "cards":[
       {
         "id": "01",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-1.jpg"
       },
       {
         "id": "02",
-        "title": "Hotels in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Готелі в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-2.jpg"
       },
       {
         "id": "03",
-        "title": "Rooms in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Кімнати в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-3.jpg"
       },
       {
         "id": "04",
-        "title": "Hostels in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Хостели в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-4.jpg"
       },
       {
         "id": "05",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-5.jpg"
       },
       {
         "id": "06",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-6.jpg"
       },
       {
         "id": "07",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-7.jpg"
       },
       {
         "id": "08",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-8.jpg"
       },
       {
         "id": "09",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-9.jpg"
       },
       {
         "id": "10",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-10.jpg"
       },
       {
         "id": "11",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-11.jpg"
       },
       {
         "id": "12",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-12.jpg"
       },
       {
         "id": "13",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-1.jpg"
       },
       {
         "id": "14",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-2.jpg"
       },
       {
         "id": "15",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-3.jpg"
       },
       {
         "id": "16",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-4.jpg"
       },
       {
         "id": "17",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-5.jpg"
       },
       {
         "id": "18",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-6.jpg"
       },
       {
         "id": "19",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-7.jpg"
       },
       {
         "id": "20",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-8.jpg"
       },
       {
         "id": "21",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-9.jpg"
       },
       {
         "id": "22",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-10.jpg"
       },
       {
         "id": "23",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-11.jpg"
       },
       {
         "id": "24",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-12.jpg"
       },
       {
         "id": "25",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-1.jpg"
       },
       {
         "id": "26",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-2.jpg"
       },
       {
         "id": "27",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-3.jpg"
       },
       {
         "id": "28",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-4.jpg"
       },
       {
         "id": "29",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-5.jpg"
       },
       {
         "id": "30",
-        "title": "Commercial property in Abu Dhabi",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в Абу-Дабі",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-6.jpg"
       },
       {
         "id": "31",
-        "title": "Commercial property in City Center",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в центрі міста",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-7.jpg"
       },
       {
         "id": "32",
-        "title": "Houses in City Center",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Будинки в центрі міста",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-8.jpg"
       },
       {
         "id": "33",
-        "title": "Hotels in City Center",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Готелі в центрі міста",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-9.jpg"
       },
       {
         "id": "34",
-        "title": "Rooms in City Center",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Кімнати в центрі міста",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-10.jpg"
       },
       {
         "id": "35",
-        "title": "Business in City Center",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Бізнес в центрі міста",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-11.jpg"
       },
       {
         "id": "36",
-        "title": "Commercial property in City Center",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в центрі міста",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-12.jpg"
       },
       {
         "id": "37",
-        "title": "Commercial property in City Center",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в центрі міста",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-1.jpg"
       },
       {
         "id": "38",
-        "title": "Commercial property in City Center",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в центрі міста",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-2.jpg"
       },
       {
         "id": "39",
-        "title": "Commercial property in City Center",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість в центрі міста",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-3.jpg"
       },
       {
         "id": "40",
-        "title": "Commercial property in Al Barsha South",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість на півдні Аль-Барша",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-4.jpg"
       },
       {
         "id": "41",
-        "title": "Commercial property in Al Barsha South",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість на півдні Аль-Барша",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-5.jpg"
       },
       {
         "id": "42",
-        "title": "Commercial property in Al Barsha South",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість на півдні Аль-Барша",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-6.jpg"
       },
       {
         "id": "43",
-        "title": "Commercial property in Al Barsha South",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість на півдні Аль-Барша",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-7.jpg"
       },
       {
         "id": "44",
-        "title": "Commercial property in Al Barsha South",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість на півдні Аль-Барша",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-8.jpg"
       },
       {
         "id": "45",
-        "title": "Commercial property in Al Barsha South",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість на півдні Аль-Барша",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-9.jpg"
       },
       {
         "id": "46",
-        "title": "Commercial property in Al Barsha South",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість на півдні Аль-Барша",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-10.jpg"
       },
       {
         "id": "47",
-        "title": "Commercial property in Al Barsha South",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість на півдні Аль-Барша",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-11.jpg"
       },
       {
         "id": "48",
-        "title": "Commercial property in Al Barsha South",
-        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
-        "btn": "Learn more",
+        "title": "Комерційна нерухомість на півдні Аль-Барша",
+        "text": "У Дубаї підтверджено підсумкову статистику всіх угод з нерухомістю за перший квартал ...",
+        "btn": "Детальніше",
         "link": "/",
         "img": "./img/blog/blog-12.jpg"
       }
@@ -800,6 +796,108 @@
         }
       ]
     }
-  }
-    
+  },
+  "mailForm": {
+    "title": "Зв'яжіться з нами",
+    "subtitle": "У вас є якісь питання?",
+    "placeholder": "Введіть свою пошту",
+    "submit": "Форма відправлена",
+    "error": "Помилка: невірний формат пошти",
+    "btn": "Відправити"
+  },
+  "contact": {
+    "title": "Контакти",
+    "contactNav": ["Головна", "Послуги", "Аренда", "Апартаменти в Дубаї"],
+    "country": "Дубай, <span>ОАЕ</span>",
+    "adress": "269 Кінг Стріт, 05-й поверх, Нейтрал Хаус Білдинг, Дубай, VIC 3000, ОАЕ.",
+    "phone": "+99 (0) 344 956 4050",
+    "phoneLink": "tel:%2B9903449564050",
+    "contactItems": [
+      "Email: <span>info@sparch.com</span>",
+      "Слідкуйте за нами:",
+      "Часи роботи: <span>Понеділок- п'ятниця : 08:00 - 17:30</span>"
+    ],
+    "form": {
+      "title":"Будь на зв'язку <span>з нами</span>", 
+      "name":"Ім'я",
+      "email":"Email *",
+      "subject":"Предмет",
+      "message":"Повідомлення *",
+      "btn": "ВІДПРАВИТИ",
+      "short":"Надто короткий",
+      "required":"Обов'язкове поле",
+      "error":"Некоректні дані в полі",
+      "submit":"Форма відправлена успішно"
+    }
+  },
+  "modal": {
+    "title": "Залиште свої контакти",
+    "subtitle": "ми зв'яжемося з вами протягом трьох годин",
+    "namePlaceholder": "Ім'я",
+    "phonePlaceholder": "Телефон",
+    "error": "Некоректні дані в полі",
+    "short":"Надто короткий",
+    "required":"Обов'язкове поле",    
+    "btn": "Відправити"
+  },
+  "latestProgects":{
+    "title": "Останні проєкти",
+    "link": "Дивитись проєкт",
+    "categories":  
+    [
+      {"title": "Всі" },
+      {"title": "Будинки" },
+      {"title": "Інтер'єр" }
+    ],
+    "articles":[
+      {
+        "id": 1,
+        "title": "Вілли",
+        "text": "Лорем є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом.",
+        "image": "./img/latest-progects/villas.jpg",
+        "link": "Переглянути проект",
+        "category": "Будинки"  
+      },
+      {
+        "id": 2,
+        "title": "Готелі",
+        "text": "Лорем є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом.",
+        "image": "./img/latest-progects/hotels.jpg",
+        "link": "Переглянути проект",
+        "category": "Будинки"  
+      },
+      {
+        "id": 3,
+        "title": "Будинки",
+        "text": "Лорем є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом.",
+        "image": "./img/latest-progects/houses.jpg",
+        "link": "Переглянути проект",
+        "category": "Будинки"  
+      },
+      {
+        "id": 4,
+        "title": "Вілли",
+        "text": "Лорем є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом.",
+        "image": "./img/latest-progects/villas2.jpg",
+        "link": "Переглянути проект",
+        "category": "Інтер'єр"  
+      },
+      {
+        "id": 5,
+        "title": "Вілли",
+        "text": "Лорем є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом.",
+        "image": "./img/latest-progects/hotels-2.jpg",
+        "link": "Переглянути проект",
+        "category": "Інтер'єр"  
+      },
+      {
+        "id": 6,
+        "title": "Вілли",
+        "text": "Лорем є псевдо- латинський текст використовується у веб - дизайні, типографіка, верстка, і друку замість англійської підкреслити елементи дизайну над змістом.",
+        "image": "./img/latest-progects/villas.jpg",
+        "link": "Переглянути проект",
+        "category": "Будинки"  
+      }
+    ]
+  }  
 }

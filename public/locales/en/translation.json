@@ -126,7 +126,7 @@
       "title": "Useful articles",
       "link": {
         "title": "View all articles",
-        "href": "/"
+        "href": "/blog"
       },
       "cards":[
         {
@@ -185,8 +185,10 @@
         }
       ]
     },
-    "reviews":[
-      { "id": "r1",
+    "reviews":{
+      "in": "in",
+      "items": [
+      { 
         "name": "Paul",
         "position": "Owner",
         "company": "Paul.com",
@@ -194,16 +196,14 @@
         "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.",
         "url": "./img/reviews/paul.png"
       },
-      {
-        "id": "r2",
+      { "name": "Yahalo",
         "position": "Founder",
         "company": "Apple inc.",
         "link": "/",
         "text": "Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing",
         "url": "./img/reviews/robert.png"
       },
-      {
-        "id": "r3",
+      { 
         "name": "Paul",
         "position": "Owner",
         "company": "Paul.com",
@@ -211,17 +211,14 @@
         "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.",
         "url": "./img/reviews/paul.png"
       },
-      {
-        "id": "r4",
-        "name": "Robert",
+      { "name": "Yahalo",
         "position": "Founder",
         "company": "Apple inc.",
         "link": "/",
         "text": "Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing",
         "url": "./img/reviews/robert.png"
       },
-      {
-        "id": "r5",
+      { 
         "name": "Paul",
         "position": "Owner",
         "company": "Paul.com",
@@ -229,9 +226,7 @@
         "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.",
         "url": "./img/reviews/paul.png"
       },
-      {
-        "id": "r6",
-        "name": "Robert",
+      { "name": "Yahalo",
         "position": "Founder",
         "company": "Apple inc.",
         "link": "/",
@@ -239,6 +234,7 @@
         "url": "./img/reviews/robert.png"
       }
     ]
+    }
   },
   "blog":{
     "title": "Blog",
@@ -800,6 +796,108 @@
         }
       ]
     }
-  }
-    
+  },
+  "mailForm": {
+    "title": "Contact us",
+    "subtitle": "Do you have any questions?",
+    "placeholder": "Enter your mail",
+    "submit": "The form has been sent",
+    "error": "Error: wrong email",
+    "btn": "Send"
+  },
+  "contact": {
+    "title": "Contact",
+    "contactNav": ["Main", "Services", "Rent", "Furnished Apartments in Dubai"],
+    "country": "Dubai, <span>UAE</span>",
+    "adress": "269 King Str, 05th Floor, Utral Hosue Building, Dubai, VIC 3000, UAE.",
+    "phone": "+99 (0) 344 956 4050",
+    "phoneLink": "tel:%2B9903449564050",
+    "contactItems": [
+      "Email: <span>info@sparch.com</span>",
+      "Follow us:",
+      "Work Hours: <span>Monday - Friday : 08h00 - 17h30</span>"
+    ],
+    "form": {
+      "title":"Be in touch <span>with us</span>", 
+      "name":"Name",
+      "email":"Email *",
+      "subject":"Subject",
+      "message":"Message *",
+      "btn": "SUBMIT",
+      "short":"Too short",
+      "required":"Required",
+      "error":"Error in the field",
+      "submit":"Form sent successfully"
+    }
+  },
+  "modal": {
+    "title": "Leave your contacts",
+    "subtitle": "we will contact you within three hours",
+    "namePlaceholder": "Name",
+    "phonePlaceholder": "Phone",
+    "error": "Name",
+    "short":"Too short",
+    "required":"Required",    
+    "btn": "Send"
+  },
+  "latestProgects":{
+    "title": "Latest projects",
+    "link": "See project",
+    "categories":  
+    [
+      {"title": "All" },
+      {"title": "Building" },
+      {"title": "Interior" }
+    ],
+    "articles":[
+      {
+        "id": 1,
+        "title": "Villas",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+        "image": "./img/latest-progects/villas.jpg",
+        "link": "See project",
+        "category": "Building"  
+      },
+      {
+        "id": 2,
+        "title": "Hotels",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+        "image": "./img/latest-progects/hotels.jpg",
+        "link": "See project",
+        "category": "Building"  
+      },
+      {
+        "id": 3,
+        "title": "Houses",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+        "image": "./img/latest-progects/houses.jpg",
+        "link": "See project",
+        "category": "Building"  
+      },
+      {
+        "id": 4,
+        "title": "Villas",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+        "image": "./img/latest-progects/villas2.jpg",
+        "link": "See project",
+        "category": "Interior"  
+      },
+      {
+        "id": 5,
+        "title": "Villas",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+        "image": "./img/latest-progects/hotels-2.jpg",
+        "link": "See project",
+        "category": "Interior"  
+      },
+      {
+        "id": 6,
+        "title": "Villas",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+        "image": "./img/latest-progects/villas.jpg",
+        "link": "See project",
+        "category": "Building"  
+      }
+    ]
+  }  
 }

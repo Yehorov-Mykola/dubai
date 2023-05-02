@@ -12,6 +12,48 @@
             margin-top: 90px;
         }
     }
+    &-form{
+        margin-top: 200px;
+        &__title{
+            font-size: 32px;
+            line-height: 35px;
+            font-weight: 700;
+            color: $color-yellow;
+            
+            span{
+                color: $color-white;
+                display: block;                
+            }
+        }
+        &__items{
+            margin-top: 75px;
+        }
+        &__items-up{
+            display: flex;
+            gap: 30px 30px; 
+            margin-bottom: 30px;           
+        }
+        &__label{
+            max-width: 350px;
+            width: 100%;
+            &--text{
+                margin-bottom: 30px;
+                display: block;
+                max-width: 100%;                
+            }
+        }
+        &__input{
+            border: 1px solid #c9c9c9;
+            background-color: transparent;
+            padding: 15px 18px;
+            color: $color-gray;
+            outline: none;
+            width: 100%;   
+            &--textarea{
+                min-height: 220px;
+            }     
+        }
+    }
 }
 
 .map-info{
@@ -64,3 +106,5 @@
         }
     }
 }
+
+

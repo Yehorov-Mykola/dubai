@@ -2,12 +2,10 @@
 
 .video{
     margin-bottom: 115px;
-    position: relative;
-
-    &__player{
-        width: 100%;
-        
-    }
+    
+    &__wrapper{
+        position: relative;
+    }        
     &__btn{
         position: absolute;
         left: 50%;
@@ -38,8 +36,4 @@
             border-bottom: 20px solid transparent;
         }
     }
-}
-
-video::-webkit-media-controls-play-button {
-    display: none;
 }

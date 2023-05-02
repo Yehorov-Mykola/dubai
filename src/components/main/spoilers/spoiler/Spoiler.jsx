@@ -5,13 +5,13 @@ function Spoiler({ item }) {
     <div className="spoiler">
       <input
         type="checkbox" 
-        class="spoiler__checkbox"
+        className="spoiler__checkbox"
         id={item.id}
       />
-      <label class="spoiler__heading" for={item.id}>
+      <label className="spoiler__heading" htmlFor={item.id}>
         {item.title}
       </label>
-      <div class="spoiler__content">
+      <div className="spoiler__content">
       {item.text}
       </div>
     </div>

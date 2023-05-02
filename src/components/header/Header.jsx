@@ -13,13 +13,12 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isShowSubmenu, setIsShowSubmenu] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState("All");
+  const [isModalClosed, setIsModalClosed] = useState(false);
+  const [activeItem, setActiveItem] = useState("en");
 
   const logoData = data.header?.logo;
-
   const phoneData = data.header?.phone;
   const langData = data.header?.lang;
-
 
   useEffect(() => {
     axios.get("/locales/en/translation.json").then(function (response) {
@@ -43,16 +42,18 @@ function Header() {
             <div className="header__right">
               <nav className="menu">
                 <button
-                  class={`menu__btn menu__btn${isOpen ? "--active" : ""}`}
+                  className={`menu__btn menu__btn${isOpen ? "--active" : ""}`}
                   onClick={toggleDropdown}
                 >
-                  <span class="menu__btn-line"></span>
+                  <span className="menu__btn-line"></span>
                 </button>
 
-                <ul class={`menu__list ${isOpen ? "menu__list--open" : ""}`}>
-                  <li class="menu__list-item ">
+                <ul
+                  className={`menu__list ${isOpen ? "menu__list--open" : ""}`}
+                >
+                  <li className="menu__list-item ">
                     <button
-                      class={`menu__link menu__link-btn ${
+                      className={`menu__link menu__link-btn ${
                         isShowSubmenu ? "menu__link-btn--active" : ""
                       }`}
                       onClick={() => setIsShowSubmenu((prev) => !prev)}
@@ -61,39 +62,51 @@ function Header() {
                     </button>
                     {isShowSubmenu && (
                       <ul className="submenu">
-                        {t('header.submenu', { returnObjects: true }).map((item, index) => (
-                          <li class="submenu__item">
-                            <NavLink
-                              key={index.id}
-                              className="submenu__link"
-                              to={item.href}
-                            >
-                              {item.title}
-                            </NavLink>
-                          </li>
-                        ))}
+                        {t("header.submenu", { returnObjects: true }).map(
+                          (item, index) => (
+                            <li className="submenu__item" key={index}>
+                              <NavLink className="submenu__link" to={item.href}>
+                                {item.title}
+                              </NavLink>
+                            </li>
+                          )
+                        )}
                       </ul>
                     )}
                   </li>
-                  {t('header.menu', { returnObjects: true }).map((item, index) => (
-                    <li key={index.id} class="menu__list-item">
-                      <NavLink className="menu__link" to={item.href}>
-                        {item.title}
-                      </NavLink>
-                    </li>
-                  ))}
+                  {t("header.menu", { returnObjects: true }).map(
+                    (item, index) => (
+                      <li className="menu__list-item" key={index}>
+                        <NavLink className="menu__link" to={item.href}>
+                          {item.title}
+                        </NavLink>
+                      </li>
+                    )
+                  )}
                 </ul>
               </nav>
               <div className="header__right-options">
                 <Button onClick={() => setIsModalOpen(true)}>
-                {t("header.button")}
+                  {t("header.button")}
                 </Button>
                 <div className="menu__languages">
                   {langData?.map((item, index) => (
-                  <button key={index} className={`menu__language ${activeItem === item.title ? "menu__language--active" : "" }`} href={item.href} onClick={() => {i18n.changeLanguage(item.btn); setActiveItem(item.title)}}>
-                    {item.title}
-                  </button>
-                ))}
+                    <button
+                      key={index}
+                      className={`menu__language ${
+                        activeItem === item.title
+                          ? "menu__language--active"
+                          : ""
+                      }`}
+                      href={item.href}
+                      onClick={() => {
+                        i18n.changeLanguage(item.btn);
+                        setActiveItem(item.title);
+                      }}
+                    >
+                      {item.title}
+                    </button>
+                  ))}
                 </div>
                 <NavLink className="menu__phone" to={phoneData?.href}>
                   {phoneData?.title}
@@ -104,12 +117,10 @@ function Header() {
         </div>
       </header>
 
-      {isModalOpen && (
-        <Modal
-          className={isModalOpen ? "open" : "close"}
-          onClose={() => setIsModalOpen(false)}
-        />
-      )}
+      <Modal
+        opened={isModalOpen ? true : false}
+        onClose={() => setIsModalOpen(false)}
+      />
     </>
   );
 }

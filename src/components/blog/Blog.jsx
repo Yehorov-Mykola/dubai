@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import BlogItem from "./blogItem/BlogItem";
 import ReactPaginate from "react-paginate";
+import { useTranslation } from "react-i18next";
 
 function Blog() {
   const [data, setData] = useState([]);
@@ -12,8 +13,9 @@ function Blog() {
   const [currentItems, setCurrentItems] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const blogItemsdata = data?.blog?.cards;
   const itemsPerPage = 6;
+
+  const [t] = useTranslation(["translation"]);
 
   useEffect(() => {
     axios.get("/localization/en.json").then(function (response) {
@@ -34,29 +36,28 @@ function Blog() {
 
   const search = () => {
     if(filters === ""){
-      setFilteredData(blogItemsdata);
+      setFilteredData(t("blog.cards", { returnObjects: true }));
     }
     else{
       setFilteredData(
-        blogItemsdata?.filter((object) => {
+        t("blog.cards", { returnObjects: true })?.filter((object) => {
           return object?.title.toLowerCase().includes(filters.search.toLowerCase());
         })
       )
-    }
-    
+    }    
   }
   
   useEffect(() => {  
     search();
-  }, [filters, data])
+  }, [filters, t("blog.cards", { returnObjects: true })])
 
   return (
     <section className="blog">
       <div className="container">
         <div className="blog__up">
-          <h2 className="section-title">{data?.blog?.title}</h2>
+          <h2 className="section-title">{t("blog.title")}</h2>
           <form  className="blog__form">
-            <input className="blog__input" type="text" placeholder="Search..." onChange={(event) => {
+            <input className="blog__input" type="text" placeholder={t("blog.searchPlaceholder")} onChange={(event) => {
             setFilters((prevState) => ({
             ...prevState, 
             search: event.target.value

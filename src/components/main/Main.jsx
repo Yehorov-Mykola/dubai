@@ -12,7 +12,6 @@ import { NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Scrollbar, Autoplay } from "swiper";
 import "swiper/css/autoplay";
-import i18n from "./../../_i18n/_i18n";
 import { useTranslation } from "react-i18next";
 
 function Main() {
@@ -46,8 +45,8 @@ function Main() {
               }}
             >
               {mainData?.slider?.map((item, index) => (
-                <SwiperSlide>
-                  <img key={index.id} src={item.url} alt={item.title} />
+                <SwiperSlide key={index}>
+                  <img src={item.url} alt={item.title} />
                 </SwiperSlide>
               ))}
               <div className="swiper__navigation">
@@ -75,7 +74,7 @@ function Main() {
               </div>
               <div className="main-social">
                 {mainData?.social?.map((item, index) => (
-                  <NavLink key={index.id} className="main-social__link" to={item.href}>
+                  <NavLink key={index} className="main-social__link" to={item.href}>
                     <img src={item.url} alt={item.title} />
                   </NavLink>
                 ))}
@@ -105,10 +104,10 @@ function Main() {
         <div className="container container--middle">
           <div className="quote__inner">
             <p className="quote__text">
-              {mainData?.quote?.text}
+            {t("main.quote.text")}
               <span className="quote__author">
                 {" "}
-                - {mainData?.quote?.author}
+                - {t("main.quote.author")}
               </span>
             </p>
           </div>
@@ -118,30 +117,30 @@ function Main() {
       <section className="main-apartments">
         <div className="container container--middle">
           <div className="main-apartments__cards">
-            {mainData?.mainApartments.map((i) => (
-              <div className="main-apartments__card">
-                <img className="main-apartments__img" src={i.url} alt={i.title} />
-                <p className="main-apartments__text">{i.text}</p>
+            {t("main.mainApartments", { returnObjects: true }).map((item, index) => (
+              <div key={index} className="main-apartments__card">
+                <img className="main-apartments__img" src={item.url} alt={item.title} />
+                <p className="main-apartments__text">{item.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <MailForm title="Contact us" subtitle="Do you have any questions?" />      
+      <MailForm title={t("mailForm.title")} subtitle={t("mailForm.subtitle")} />      
 
       <section className="useful-articles">
         <div className="container container--middle">
         <div className="useful-articles__up">
           <h2 className="section-title">
-            {mainData?.usefulArticles?.title}
+            {t("main.usefulArticles.title")}
           </h2>
-          <NavLink className="useful-articles__link" to={mainData?.usefulArticles?.link?.href}>
-            {mainData?.usefulArticles?.link?.title}
+          <NavLink className="useful-articles__link" to={t("main.usefulArticles.link.href")}>
+            {t("main.usefulArticles.link.title")}
           </NavLink>
         </div>
           <div className="useful-articles__cards">
-          {mainData?.usefulArticles?.cards?.map((item, index) => (
+          {t("main.usefulArticles.cards", { returnObjects: true }).map((item, index) => (
                 <UsefulArticlesCard key={index} item={item} />
             ))}
           </div>
@@ -151,14 +150,13 @@ function Main() {
       <Reviews />
 
       <Spoilers />
-
-
-      {isModalOpen && 
-        <Modal 
-          className={isModalOpen ? 'open' : 'close'}
-          onClose={() => setIsModalOpen(false)} 
-        />
-      }
+      
+      {/* 
+      <Modal
+        opened={isModalOpen ? true : false}
+        onClose={() => setIsModalOpen(false)}
+      />
+      */}
     </>
   );
 }

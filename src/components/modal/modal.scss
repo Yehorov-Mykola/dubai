@@ -1,19 +1,26 @@
 @import './../../assets/consts/colors.scss';
 
 .modal{
-    max-width: 730px;
-    min-height: 450px;
-    margin: 385px auto 0;
-    padding: 65px 140px 44px;
-    text-align: center;
-    background-color: $color-white;
-    z-index: 3;
-    position: relative;
-    color:$color-black;
+    &-box{
+        max-width: 730px;
+        min-height: 450px;
+        padding: 65px 140px 44px;
+        text-align: center;
+        background-color: $color-white;
+        z-index: 3;
+        position: relative;
+        color:$color-black;
+        top: -160px;
+    }   
+    &__btn-wrapper{
+        display: flex;
+        justify-content: center;
+    } 
 
     &__wrapper{
         position: fixed;
-        height: 100vh;
+        height: 0;
+        padding: 0;
         width: 100%;
         left: 0;
         right: 0;
@@ -21,7 +28,27 @@
         top: 0;
         background: rgba(39, 39, 39, 0.9);
         z-index: 3;
-        overscroll-behavior: contain
+        overscroll-behavior: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+
+        &--opened{
+            animation: modal-open 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+            .modal-box{
+                top: 0;
+            }
+            body{
+                overflow: hidden
+            } ;
+        }
+        &--closed{
+            animation: modal-closed 1s  forwards;
+            .modal-box{
+               top: 0;
+            }
+        }
     }
     &__title{
         font-size: 48px;
@@ -49,6 +76,38 @@
         &:after {transform: rotate(-45deg);}
     }
 }
+
+@keyframes modal-open {
+    0% {
+      opacity: 0;
+      height: 0px;
+      padding: 0;
+    }
+    1% {
+      opacity: 0;
+      height: 100vh;
+
+    }
+    100% {
+      opacity: 1;
+      height: 100vh;
+    }
+  }
+
+  @keyframes modal-closed {
+    0% {
+        opacity: 1;
+        height: 100vh;
+      }
+    99% {
+      opacity: 0;
+      height: 100vh;
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+      }
+  }
 
 .form{
     &__input{

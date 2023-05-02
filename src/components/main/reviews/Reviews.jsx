@@ -6,16 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination, Scrollbar } from "swiper";
 import "swiper/css/pagination";
+import { useTranslation } from "react-i18next";
 
 function Reviews() {
-  const [data, setData] = useState(false);
-  const reviewsData = data?.main?.reviews;
 
-  useEffect(() => {
-    axios.get("/localization/en.json").then(function (response) {
-      setData(response.data);
-    });
-  }, []);
+  const [t] = useTranslation(["translation"]);
 
   return (
     <section className="reviews">
@@ -32,9 +27,9 @@ function Reviews() {
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
             >
-              {reviewsData?.map((item, index) => (
-                <SwiperSlide>
-                  <ReviewItem key={index} item={item} />
+              {t("main.reviews.items", { returnObjects: true }).map((item, index) => (
+                <SwiperSlide key={index}>
+                  <ReviewItem item={item} />
                 </SwiperSlide>
               ))}
             </Swiper>

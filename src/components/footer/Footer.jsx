@@ -20,7 +20,6 @@ function Footer() {
     });
   }, []);
 
-  const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
     <>
@@ -34,8 +33,8 @@ function Footer() {
           <nav className="footer-menu">
             <ul className="footer-menu-items">
               {footerData?.menu?.map((item, index) => (
-                <li class="footer-menu-item">
-                  <FooterCategory key={index} menuItem={item} />
+                <li key={index} className="footer-menu-item">
+                  <FooterCategory  menuItem={item} onOpen={() => setIsModalOpen(true)}/>
                 </li>
               ))}
             </ul>
@@ -50,7 +49,7 @@ function Footer() {
               <div className="footer-copyright__social">
                 {footerData?.copyright?.social?.map((item, index) => (
                   <NavLink
-                    key={index.id}
+                    key={index}
                     className="footer-copyright__link"
                     to={item.href}
                   >
@@ -63,12 +62,12 @@ function Footer() {
         </div>
       </footer>
 
-      {isModalOpen && (
-        <Modal
-          className={isModalOpen ? "open" : "close"}
-          onClose={() => setIsModalOpen(false)}
-        />
-      )}
+      {/* 
+      <Modal
+        opened={isModalOpen ? true : false}
+        onClose={() => setIsModalOpen(false)}
+      />
+      */}
     </>
   );
 }
