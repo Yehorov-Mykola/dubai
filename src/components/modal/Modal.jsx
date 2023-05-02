@@ -1,6 +1,6 @@
 import "./modal.scss";
 import Button from "../button/Button";
-import React from "react";
+import React, {useEffect} from "react";
 import useOutsideClick from "../../assets/hooks/useOutsideClick";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
@@ -15,13 +15,17 @@ function Modal({ onClose, opened }) {
     phone: Yup.string().min(6, t("modal.short")).required(t("modal.required")),
   });
 
+  useEffect(() => {
+    document.body.classList.add('no-scroll');
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, []);
+
   return (
     <>
       <div
-        className={`modal__wrapper ${
-          opened ? "modal__wrapper--opened" : "modal__wrapper--closed"
-        }`}
-      >
+        className="modal__wrapper">
         <div className="modal modal-box" ref={ref}>
           <h2 className="modal__title">{t("modal.title")}</h2>
           <p className="modal__subtitle">{t("modal.subtitle")}</p>

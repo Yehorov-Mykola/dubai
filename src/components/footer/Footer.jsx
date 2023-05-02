@@ -62,12 +62,12 @@ function Footer() {
         </div>
       </footer>
 
-      {/* 
-      <Modal
-        opened={isModalOpen ? true : false}
-        onClose={() => setIsModalOpen(false)}
-      />
-      */}
+      {isModalOpen && 
+        <Modal 
+          className={isModalOpen ? 'open' : 'close'}
+          onClose={() => setIsModalOpen(false)} 
+        />
+      }
     </>
   );
 }

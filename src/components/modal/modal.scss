@@ -11,6 +11,7 @@
         position: relative;
         color:$color-black;
         top: -160px;
+        top: 0;
     }   
     &__btn-wrapper{
         display: flex;
@@ -19,7 +20,7 @@
 
     &__wrapper{
         position: fixed;
-        height: 0;
+        height: 100vh;
         padding: 0;
         width: 100%;
         left: 0;
@@ -33,22 +34,6 @@
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease-in-out;
-
-        &--opened{
-            animation: modal-open 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-            .modal-box{
-                top: 0;
-            }
-            body{
-                overflow: hidden
-            } ;
-        }
-        &--closed{
-            animation: modal-closed 1s  forwards;
-            .modal-box{
-               top: 0;
-            }
-        }
     }
     &__title{
         font-size: 48px;
@@ -77,37 +62,6 @@
     }
 }
 
-@keyframes modal-open {
-    0% {
-      opacity: 0;
-      height: 0px;
-      padding: 0;
-    }
-    1% {
-      opacity: 0;
-      height: 100vh;
-
-    }
-    100% {
-      opacity: 1;
-      height: 100vh;
-    }
-  }
-
-  @keyframes modal-closed {
-    0% {
-        opacity: 1;
-        height: 100vh;
-      }
-    99% {
-      opacity: 0;
-      height: 100vh;
-    }
-    100% {
-        opacity: 0;
-        height: 0;
-      }
-  }
 
 .form{
     &__input{
