@@ -1,7 +1,8 @@
 @import './../../assets/consts/colors.scss';
+@import './../../assets/mixins/_mixins';
 
 .button{
-    display: block;
+    display: inline-block;
     padding: 12px 14px;
     font-size: 14px;
     line-height: 16px;
@@ -15,6 +16,17 @@
         background-color: $color-orange;
         cursor: pointer;
     }
+    &--header{
+        @include onTablet {
+            display: none;
+        }
+    }
+    &--header-mobile{
+        display: none;
+        @include onTablet {
+            display: block;
+        }
+    }
 }
 
 .button--mail-form{
@@ -24,6 +36,13 @@
     background-color: $color-dark;
     color: $color-white;
     border: none;
+    @include onLaptop {
+        height: 42px;
+        line-height: 16px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 100px;
+    }
     &:hover{
         background-color: $color-gray;    
     }

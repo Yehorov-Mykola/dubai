@@ -46,7 +46,7 @@ function Main() {
             >
               {mainData?.slider?.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <img src={item.url} alt={item.title} />
+                  <img className="main-slider__img" src={item.url} alt={item.title} />
                 </SwiperSlide>
               ))}
               <div className="swiper__navigation">
@@ -82,7 +82,7 @@ function Main() {
             </div>
           </div>
         </div>
-      </section>
+      </section>      
 
       <LatestProgect title="Latest projects" />
 
@@ -113,7 +113,7 @@ function Main() {
           </div>
         </div>
       </section>
-
+ 
       <section className="main-apartments">
         <div className="container container--middle">
           <div className="main-apartments__cards">
@@ -150,7 +150,7 @@ function Main() {
       <Reviews />
 
       <Spoilers />
-      
+  
       {isModalOpen && 
         <Modal 
           className={isModalOpen ? 'open' : 'close'}

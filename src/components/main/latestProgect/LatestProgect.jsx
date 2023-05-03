@@ -30,10 +30,6 @@ function LatestProgect({ title }) {
       .then(function (response) {
         setCategoriess([{ title: "All" }, ...response.data]);
       })
-      .catch(function (error) {
-        console.log(error);
-      })
-      .finally(function () {});
   }, []);
 
   const filterByCategory = () => {
@@ -76,11 +72,30 @@ function LatestProgect({ title }) {
             modules={[Pagination, Scrollbar]}
             style={{ width: "100%" }}
             spaceBetween={20}
-            slidesPerView={4}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
+            breakpoints={{
+            370: {
+                slidesPerView: 2,
+                slidesPerColumn: 2,
+                spaceBetween: 10,
+                slideToClickedSlide: true,
+            },
+            720: {
+              slidesPerView: 4,
+              slidesPerColumn: 2,
+              spaceBetween: 10,
+              slideToClickedSlide: true,
+          },
+            1700: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                slideToClickedSlide: true,
+            }
+          }
+        }
           >
             {filteredData.map((item, index) => (
               <SwiperSlide key={index}>

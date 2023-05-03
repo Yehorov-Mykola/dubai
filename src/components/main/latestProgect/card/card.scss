@@ -32,6 +32,12 @@
         font-weight: 700;
         font-size: 32px;
         line-height: 45px;
+        @include onLaptop {
+            line-height: 22px;
+            font-size: 18px;
+            bottom: 25px;
+            left: 15px;
+        }
     }
     &-info{
         position: absolute;
@@ -47,16 +53,27 @@
         background-color: $color-yellow;
         color: $color-dark;
         transition: all .3s;
+        @include onLaptop {
+            padding: 15px 10px;
+        }
 
         &__title{
             font-size: 32px;
             line-height: 45px;
             font-weight: 700;
+            @include onLaptop {
+                line-height: 22px;
+                font-size: 18px;
+            }
         }
         &__text{
             font-size: 22px;
             line-height: 26px;
             font-family: 'Work Sans';
+            @include onLaptop {
+                line-height: 14px;
+                font-size: 12px;
+            }
         }
         &__link{
             position: relative;
@@ -67,15 +84,25 @@
             color: $color-dark;
             padding-right: 30px;
             display: inline-block;
+            @include onLaptop {
+                line-height: 14px;
+                font-size: 12px;
+                padding-right: 18px;
+            }
 
             &::before{
                 position: absolute;
                 content: "";
                 background: url("./../../../../../public/img/svg/arrow-right.svg");
+                background-repeat: no-repeat;
                 width: 13px;
                 height: 20px;
                 right: 0;
                 bottom: 0;
+                @include onLaptop {
+                    height: 12px;
+                    background-size: contain;
+                }
             }
         }
     }

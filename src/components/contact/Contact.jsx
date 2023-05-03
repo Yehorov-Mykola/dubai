@@ -9,14 +9,17 @@ import * as Yup from "yup";
 
 function Contact() {
   const [t] = useTranslation(["translation"]);
+  const [submit, setSubmit] = useState(false);
 
   const SignupSchema = Yup.object().shape({
     name: Yup.string().min(2, t("contact.form.short")),
-    email: Yup.string().min(6, t("contact.form.short")).required(t("contact.form.required")),
+    email: Yup.string()
+      .min(6, t("contact.form.short"))
+      .required(t("contact.form.required")),
     message: Yup.string()
       .min(6, t("contact.form.short"))
       .required(t("contact.form.required")),
-  }); 
+  });
 
   return (
     <section className="contact">
@@ -76,7 +79,8 @@ function Contact() {
               }}
               validate={(data) => {
                 const errors = {};
-                if (/[0-9]/.test(data.name)) errors.name = t("contact.form.error");
+                if (/[0-9]/.test(data.name))
+                  errors.name = t("contact.form.error");
                 if (
                   !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(data.email)
                 )
@@ -86,6 +90,7 @@ function Contact() {
               validationSchema={SignupSchema}
               onSubmit={(values) => {
                 console.log(values);
+                setSubmit(true);
               }}
             >
               {({ errors, touched }) => (
@@ -135,10 +140,15 @@ function Contact() {
                       as="textarea"
                     />
                     {errors.message && touched.message ? (
-                        <div>{errors.message}</div>
-                      ) : null}
+                      <div>{errors.message}</div>
+                    ) : null}
                   </label>
                   <Button submit>{t("contact.form.btn")}</Button>
+                  {submit && (
+                    <p className="contact-form__submit">
+                      {t("contact.form.submit")}
+                    </p>
+                  )}
                 </Form>
               )}
             </Formik>

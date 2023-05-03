@@ -53,7 +53,7 @@
   },
   "main":
   {
-    "title": "Welcome home <span>to</span> luxury",
+    "title": "Welcome home <br><span>to</span> luxury",
     "subtitle":"Lorem ipsum",
     "button": "Book a consultation",
     "prevBtn": "prev",

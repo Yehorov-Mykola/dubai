@@ -83,10 +83,37 @@ function Header() {
                       </li>
                     )
                   )}
+                  <li className="menu__list-item menu__list-item--mobile">
+                    <Button onClick={() => setIsModalOpen(true)}>
+                      {t("header.button")}
+                    </Button>
+                    <NavLink className="menu__phone menu__phone--mobile" to={phoneData?.href}>
+                      {phoneData?.title}
+                    </NavLink>
+                    <div className="menu__languages menu__languages--mobile">
+                      {langData?.map((item, index) => (
+                        <button
+                          key={index}
+                          className={`menu__language ${
+                            activeItem === item.title
+                              ? "menu__language--active"
+                              : ""
+                          }`}
+                          href={item.href}
+                          onClick={() => {
+                            i18n.changeLanguage(item.btn);
+                            setActiveItem(item.title);
+                          }}
+                        >
+                          {item.title}
+                        </button>
+                      ))}
+                    </div>
+                  </li>
                 </ul>
               </nav>
               <div className="header__right-options">
-                <Button onClick={() => setIsModalOpen(true)}>
+                <Button header onClick={() => setIsModalOpen(true)}>
                   {t("header.button")}
                 </Button>
                 <div className="menu__languages">
@@ -117,12 +144,12 @@ function Header() {
         </div>
       </header>
 
-      {isModalOpen && 
-        <Modal 
-          className={isModalOpen ? 'open' : 'close'}
-          onClose={() => setIsModalOpen(false)} 
+      {isModalOpen && (
+        <Modal
+          className={isModalOpen ? "open" : "close"}
+          onClose={() => setIsModalOpen(false)}
         />
-      }
+      )}
     </>
   );
 }

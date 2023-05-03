@@ -53,7 +53,7 @@
   },
   "main":
   {
-    "title": "Ласкаво просимо <span>до</span> розкоші",
+    "title": "Ласкаво просимо <br><span>до</span> розкоші",
     "subtitle":"Якись текст",
     "button": "Замовити консультацію",
     "prevBtn": "назад",
@@ -630,133 +630,133 @@
   "footer" : {
     "menu":[
       {
-        "title": "Buy",
+        "title": "Купити",
         "link": "/buy",
         "submenu":
           [
             {
-              "title": "Apartment in Dubai",
+              "title": "Апартаменти в Дубаї",
               "link": "/"
             },
             {
-              "title": "House in Dubai",
+              "title": "Будинки в Дубаї",
               "link": "/"
             },
             {
-              "title": "Apartment in Dubai",
+              "title": "Апартаменти в Дубаї",
               "link": "/"
             },
             {
-              "title": "Loft in Dubai",
+              "title": "Лофт в Дубаї",
               "link": "/"
             },
             {
-              "title": "Penthouse in Dubai",
+              "title": "Пентхауси в Дубаї",
               "link": "/"
             },
             {
-              "title": "Villa in Dubai",
+              "title": "Вілли в Дубаї",
               "link": "/"
             }
           ]
       },
       {
-        "title": "Services",
+        "title": "Послуги",
         "href": "/services",
         "submenu":
           [
             {
-              "title": "Property management in Dubai, UAE",
+              "title": "Управління нерухомістю в Дубаї, ОАЕ",
               "href": "/"
             },
             {
-              "title": "Sell ​​property in Dubai, UAE",
+              "title": "Управління нерухомістю в Дубаї, ОАЕ",
               "href": "/"
             },
             {
-              "title": "Rent property in Dubai, UAE",
+              "title": "Управління нерухомістю в Дубаї, ОАЕ",
               "href": "/"
             },
             {
-              "title": "Investments in Dubai, UAE",
+              "title": "Управління нерухомістю в Дубаї, ОАЕ",
               "href": "/"
             },
             {
-              "title": "Real estate for cryptocurrency in Dubai",
+              "title": "Управління нерухомістю в Дубаї, ОАЕ",
               "href": "/"
             },
             {
-              "title": "Moving to Dubai, UAE",
+              "title": "Управління нерухомістю в Дубаї, ОАЕ",
               "href": "/"
             }
           ]
       },
       {
-        "title": "Information",
+        "title": "Інформація",
         "href": "/information",
         "submenu":
           [
             {
-              "title": "Video",
+              "title": "Відео",
               "href": "/"
             },
             {
-              "title": "Podcasts",
+              "title": "Продукти",
               "href": "/"
             },
             {
-              "title": "Laws",
+              "title": "Закони",
               "href": "/"
             },
             {
-              "title": "Questions and answers",
+              "title": "Питання",
               "href": "/"
             },
             {
-              "title": "Books",
+              "title": "Книжки",
               "href": "/"
             },
             {
-              "title": "Articles",
+              "title": "Статті",
               "href": "/"
             }
           ]
       },
       {
-        "title": "About company",
+        "title": "Про нас",
         "href": "/about",
         "submenu":
           [
             {
-              "title": "Jobs",
+              "title": "Компанія",
               "href": "/"
             },
             {
-              "title": "Story",
+              "title": "Історія",
               "href": "/"
             },
             {
-              "title": "Licenses",
+              "title": "Ліцензія",
               "href": "/"
             },
             {
-              "title": "Why are we",
+              "title": "Хто ми",
               "href": "/"
             },
             {
-              "title": "Real estate agency",
+              "title": "Про агенство",
               "href": "/"
             }
           ]
       },
       {
-        "title": "Contact",
+        "title": "Контакти",
         "href": "/contact",
-        "btn": "Book a consultation",
+        "btn": "Замовити консультацію",
         "submenu":
           [
             {
-              "title": "964 Worthington Drive Dubai, UAE",
+              "title": "Управління нерухомістю в Дубаї, ОАЕ",
               "href": "/"
             },
             {
@@ -767,7 +767,7 @@
       }
     ],
     "copyright":{
-      "title": "Copyright © 2023 Dubai Realty",
+      "title": "Копірайт © 2023 Dubai Realty",
       "social":[
         {
           "title": "facebook",

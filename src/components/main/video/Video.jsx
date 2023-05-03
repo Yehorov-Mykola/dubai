@@ -18,7 +18,7 @@ function Video() {
           {isVideoOpen && (
             <iframe
               width="100%"
-              height="920"
+              height="100%"
               src="https://www.youtube.com/embed/QbFdXKDaYng?&autoplay=1"
               title="YouTube video player"
               frameBorder="0"
@@ -28,12 +28,7 @@ function Video() {
 
           {!isVideoOpen && (
             <>
-              <img
-                src="./img/video.jpg"
-                alt=""
-                width="100%"
-                height="920"
-              />
+              <div className="video__img" />
               <button className="video__btn" onClick={() => setIsVideoOpen(true)}/>
             </>
           )}

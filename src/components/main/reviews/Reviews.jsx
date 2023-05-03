@@ -21,11 +21,20 @@ function Reviews() {
               modules={[Pagination, Scrollbar]}
               style={{ width: "100%" }}
               spaceBetween={20}
-              slidesPerView={2}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
+              breakpoints={{
+                360: {
+                  slidesPerView: 1,
+                  slideToClickedSlide: true,
+              },
+                760: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    slideToClickedSlide: true,
+                }
+              }
+            }
             >
               {t("main.reviews.items", { returnObjects: true }).map((item, index) => (
                 <SwiperSlide key={index}>

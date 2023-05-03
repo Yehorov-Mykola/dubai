@@ -1,37 +1,24 @@
 @import './../../assets/consts/colors.scss';
-
-.expertise {
-    margin-bottom: 90px;
-    color: $color-light-gray;
-
-    &__title {
-        color: $color-yellow;
-        font-weight: 600;
-        line-height: 160%;
-        font-size: 18px;
-        font-family: 'Work Sans', serif;
-        margin-bottom: 40px;
-    }
-
-    &__subtitle {
-        font-size: 70px;
-        line-height: 69px;
-        font-weight: 700;
-        margin-bottom: 33px;
-    }
-
-    &__text {
-        line-height: 160%;
-        font-size: 18px;
-        font-family: 'Work Sans', serif;       
-    }
-}
+@import './../../assets/mixins/mixins';
 
 .main-slider {
     padding-top: 80px;
-    min-height: 970px;
     margin-bottom: 135px;
-
+    @include onLaptop {
+        margin-bottom: 100px;
+    }
+    @include onTablet {
+        margin-bottom: 40px;
+    }
+    
+    &__img{
+        height:90vh;
+        width: 100%;
+        @include onBigLaptop {
+            height:90vh;
+            width:auto;
+        }
+    }
     & .swiper__navigation{
         position: absolute;
         bottom: 0;
@@ -39,6 +26,9 @@
         right: 0;
         display: flex;
         justify-content: end;
+        @include onTablet {
+            flex-direction: column;
+        }
     }
     & .main-swiper-pagination {
         display: flex;
@@ -49,7 +39,14 @@
         max-width: 1080px;
         height: 150px;
         z-index: 3;
-
+        @include onLaptop {
+            height: 70px;
+            padding: 0px 100px 0 50px;
+        }
+        @include onTablet {
+            height: 95px;
+            padding: 0px 40px 0;
+        }
     }    
     
     & .swiper-pagination-bullet {
@@ -66,6 +63,14 @@
             line-height: 24px;
             font-weight: 700;
             color: $color-white;
+            @include onLaptop {
+                font-size: 40px;
+                left: -40px;
+            }
+            @include onTablet {
+                left: -37px;
+                top: -15px;
+            }
         }
         &:nth-child(1)::before {
             content: "01";
@@ -87,6 +92,15 @@
             font-weight: 600;
             font-family: 'Work Sans';
             color: $color-white;
+            @include onLaptop {
+                font-size: 12px;
+                line-height: 14px;
+                top: -8px;
+            }
+            @include onTablet {
+                right: -75px;
+                top: 20px;
+            }
         }
     }
     & .swiper-pagination-bullet-active.swiper-pagination-bullet::before {
@@ -94,12 +108,25 @@
     }
     &__inner {
         position: relative;
+        @include onTablet {
+            padding-bottom: 5px;
+            border-bottom: 1px solid $color-yellow;
+        }
     }
     & .swiper-buttons{
         display: flex;
         z-index: 3;
         margin-top: 80px;
         margin-right: 95px;
+        margin-left: 20px;
+        @include onLaptop {
+            font-size: 10px;
+            line-height: 24px;
+            margin: 25px 30px 0;
+        }
+        @include onTablet {
+            margin: 0 0 15px 20px;
+        }
     }
     & .swiper-button{
         font-size: 20px;
@@ -110,7 +137,10 @@
         letter-spacing: 0.2em;
         margin-right: 15px;   
         height: fit-content;     
-
+        @include onTablet {
+            line-height: 24px;
+            font-size: 10px;
+        }
         &:hover{
             cursor: pointer;
         }
@@ -138,11 +168,19 @@
     &__text {
         margin: 270px 0 0 350px;
         color: $color-white;
-        max-width: 850px;
         padding: 45px 0 45px 28px;
         border-left: 4px solid $color-yellow;
         position: relative;
-
+        @include onBigLaptop {
+            margin: 15% 0 0 30px;
+        }
+        @include onLaptop {
+            margin: 120px 0 0 30px;
+        }
+        @include onTablet {
+            padding: 15px;
+            margin: 25px 0 0 20px;
+        }
         &::after,
         &::before {
             position: absolute;
@@ -151,6 +189,9 @@
             height: 4px;
             width: 125px;
             background-color: $color-yellow;
+            @include onTablet {
+                width: 63px;
+            }
         }
         &::after {
             top: 0;
@@ -166,6 +207,13 @@
         text-transform: uppercase;
         font-family: 'Work Sans';
         margin-bottom: 22px;
+        @include onLaptop {
+            line-height: 12px;
+            font-size: 10px;
+        }
+        @include onTablet {
+            margin-bottom: 5px;
+        }
     }
 
     &__title {
@@ -175,6 +223,15 @@
         font-family: 'Space Grotesk', sans-serif;
         text-transform: capitalize;
         margin-bottom: 22px;
+        @include onLaptop {
+            line-height: 64px;
+            font-size: 50px;
+        }
+        @include onTablet {
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 60px;
+        }
         span{
             color: $color-yellow;
         }
@@ -190,6 +247,14 @@
         color: $color-white;
         font-family: 'Work Sans';
         position: relative;
+        @include onLaptop {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        @include onTablet {
+            line-height: 14px;
+            font-size: 12px;
+        }
 
         &::before {
             position: absolute;
@@ -199,6 +264,9 @@
             height: 20px;
             bottom: 0;
             right: 0;
+            @include onTablet {
+                bottom: -2px;
+            }
         }
 
         &:hover {
@@ -210,27 +278,96 @@
 .main-social{
     position: absolute;
     top: 40px;
-    right: 20px;
+    right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40px;
+    @include onTablet {
+        display: none;
+    }
 
     &__link{
         margin-bottom: 20px;
+        transition: all .3s;       
+            
+            &:hover{
+                margin-right: 10px;
+            }
+    }
+}
+
+.expertise {
+    margin-bottom: 90px;
+    color: $color-light-gray;
+    @include onLaptop {
+        margin-bottom: 70px;
+    }
+
+    &__title {
+        color: $color-yellow;
+        font-weight: 600;
+        line-height: 160%;
+        font-size: 18px;
+        font-family: 'Work Sans', sans-serif;
+        margin-bottom: 40px;
+        @include onLaptop {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 14px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 70px;
+        line-height: 69px;
+        font-weight: 700;
+        margin-bottom: 33px;
+        @include onLaptop {
+            line-height: 37px;
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        line-height: 160%;
+        font-size: 18px;
+        font-family: 'Work Sans', sans-serif;
+        @include onLaptop {
+            line-height: 160%;
+            font-size: 14px;
+        }       
     }
 }
 
 .quote{
     margin-bottom: 65px;
+    @include onTablet {
+        margin-bottom: 40px;
+    }
 
     &__inner{
         border: 1px solid $color-yellow;
         padding: 70px 95px;
+        @include onLaptop {
+            padding: 35px 60px;
+        }
+        @include onTablet {
+            padding: 25px;
+        }
     }
     &__text{
         line-height: 160%;
         color: $color-white;
         font-size: 30px;
+        @include onLaptop {
+            line-height: 29px;
+            font-size: 18px;
+        }
+        @include onTablet {
+            line-height: 160%;
+            font-size: 16px;
+        }
     }
     &__author{
         color: $color-yellow;
@@ -239,18 +376,37 @@
 
 .main-apartments{
     margin-bottom: 115px;
+    @include onLaptop {
+        margin-bottom: 70px;
+    }
+    @include onTablet {
+        margin-bottom: 40px;
+    }
 
     &__cards{
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        @include onBigLaptop {
+            justify-content:inherit;
+        }
+        @include onTablet {
+            display: block;
+        }
     }
     &__card{
         max-width: 535px;
+        @include onBigLaptop {
+            margin-right: 30px;
+        }
+        @include onTablet {
+            width: 100%;
+            margin: 0 auto 20px;
+        }
     }
     &__img
     {
         width: 100%;
+        height:auto;
     }
     &__text{
         margin-top: 70px;
@@ -258,16 +414,36 @@
         line-height: 160%;
         font-family: 'Work Sans';
         color: #E8E8E8;
+        @include onLaptop {
+            margin-top: 30px;
+            line-height: 160%;
+            font-size: 14px;
+        }
+        @include onTablet {
+            margin-top: 20px;            
+        }
     }
 }
 
 .useful-articles{
     margin-bottom: 170px;
+    @include onLaptop {
+        margin-bottom: 80px;
+    }
+    @include onTablet {
+        margin-bottom: 40px;
+    }
 
     &__up{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include onTablet {
+            line-height: 10px;          
+            font-size: 8px;
+            padding-right: 15px;
+        }
     }
     &__link{
         font-size: 16px;
@@ -276,20 +452,49 @@
         color: $color-gray;
         padding-right: 45px;
         position: relative;
+        @include onLaptop {
+            line-height: 15px;
+            font-size: 12px;
+            padding-right: 20px;
+        }
+        @include onTablet {
+            line-height: 10px;          
+            font-size: 8px;
+            padding-right: 15px;
+        }
 
         &::before{
             position: absolute;
             content: "";
             background-image: url(./../../../public/img/svg/arrow-right-grey.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
             right: 0;
             bottom: 0;
             width: 12px;
             height: 20px;
+            @include onLaptop {
+                width: 10px;
+                height: 18px;
+                bottom: -3px;
+            }
+            @include onTablet {
+                width: 7px;
+                bottom: -7px;
+            }
         }
     }
     &__cards{
         margin-top: 90px;
         display: flex;
         justify-content: space-between;
+        @include onLaptop {
+            justify-content:inherit;
+
+        }
+        @include onTablet {
+            margin-top: 20px; 
+            display: block;          
+        }
     }
 }

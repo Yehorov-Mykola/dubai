@@ -64,14 +64,36 @@
             padding-top: 100px;
             z-index: 100;
             height: 100vh;
+            @include onTablet {
+                padding: 100px 35px 0;
+            }
          }
          &-item{
             position: relative;
+            &--mobile{
+                display: none;
+                @include onTablet {
+                    border-top: 1px solid $color-yellow;
+                    display: block;
+                    padding: 35px 0 10px;
+                    text-align: center;
+                }
+            }
          }
     }
 
     &__phone{
         color: $color-white;
+        @include onTablet {
+            display: none;
+        }
+        &--mobile{
+            @include onTablet {
+                display: block;
+                margin-top: 35px;
+            }
+        }
+
     }
 
     &__btn {
@@ -145,6 +167,9 @@
             font-weight: 600;
             margin-bottom: 20px;
         }
+        @include onTablet {
+            padding-left: 15px;
+        }
         &:hover {
             cursor: pointer;
         }
@@ -159,6 +184,9 @@
             height: 1px;
             bottom: -2px;
             transition: all .3s;
+            @include onLaptop {
+                content: none;
+            }
         }
 
         &:hover::before {
@@ -173,15 +201,29 @@
             margin-top: 6px;
             font-family: "Gilroy", serif;
             position: relative;
+            @include onLaptop {
+                padding-right: 30px;
+            }
+            @include onTablet {
+                padding-left: 15px;
+            }
 
             &::after{
                 position: absolute;
                 content: "";
                 background-image: url(./../../../public/img/svg/arrow-header.svg);
+                background-repeat: no-repeat;
                 width: 9px;
                 height: 6px;
                 right: 0;
                 top: 4px;
+                @include onLaptop {
+                    bottom: 20px;
+                    top: auto;
+                    width: 16px;
+                    height: 10px;
+                    background-size: cover;
+                }
             }
             
             &--active{
@@ -201,6 +243,15 @@
         @include onLaptop {
             margin: 0 30px 0 30px;
         }
+        @include onTablet {
+            display: none;
+            &--mobile{
+                @include onTablet {
+                    display: block;
+                    margin-top: 35px;
+                }
+            }
+        }
     }
 
     &__language {
@@ -214,6 +265,7 @@
         transition: color .3s;
         background-color: transparent;
         border: none;
+        outline: none;
 
         &:last-child {
             margin-right: 0;
@@ -238,9 +290,18 @@
     width: 275px;
     border: 1px solid $color-gray;
     z-index: 5;
+    @include onLaptop {
+        position:static;
+        border: 0;
+        margin-bottom: 15px;
+    }
+    @include onTablet {
+        margin-left: 20px;
+    }
 
     &__item{
         padding: 10px 35px 10px 20px; 
+        
         &:hover{            
             background-color: $color-yellow;
             cursor: pointer;

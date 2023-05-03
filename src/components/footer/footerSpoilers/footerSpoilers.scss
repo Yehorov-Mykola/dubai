@@ -1,8 +1,11 @@
 @import './../../../assets/mixins/mixins';
-.spoilers{
+
+.footer-spoilers{
+  display: none;
   margin-bottom: 122px;
   @include onLaptop {
     margin-bottom: 70px;
+    display: block;
   }
   @include onTablet {
     margin-bottom: 40px;

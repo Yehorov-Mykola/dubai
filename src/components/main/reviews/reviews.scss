@@ -2,53 +2,15 @@
 @import './../../../assets/consts/colors.scss';
 
 
-
-.category{
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 16px;
-    font-family: 'Work Sans';
-    color: $color-white;
-    margin-right: 20px;
-    border: none;
-    background-color: transparent;
-    transition: color .3s;
-    
-    &__wrapper{
-        margin-top: 8px;
-    }
-}
-.category:hover{
-    cursor: pointer;
-}
-.category--active{
-    color: $color-yellow;
-}
-
-.latest-progect{
-    margin-bottom: 180px;
-    width: 100%;
-
-    &__up{
-        display: flex;
-        align-items: center;
-        padding-left: 345px;
-        margin-bottom: 75px;
-    }
-    &__title{
-        font-size: 36px;
-        line-height: 46px;
-        font-weight: 700;
-        color: white;
-        margin-right: 350px;
-    }
-}
 .reviews .swiper{
     position: static!important;
     overflow: visible!important;
 
     &-pagination{
         bottom: -95px!important;
+        @include onTablet {
+            bottom: -45px!important;
+        }
 
         &-bullet{
             background-color: $color-gray!important;

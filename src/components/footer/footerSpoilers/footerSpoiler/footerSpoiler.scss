@@ -1,7 +1,7 @@
 @import './../../../../assets/consts/colors.scss';
 @import './../../../../assets/mixins/mixins';
 
-.spoiler {
+.footer-spoiler {
   &__heading {
     display: block;
     position: relative;
@@ -46,12 +46,12 @@
     position: absolute;
     left: -9999em;
 
-    &:checked~.spoiler__heading:before {
+    &:checked~.footer-spoiler__heading:before {
       transform: rotate(90deg);
       transition: all 0.1s;
     }
 
-    &:checked~.spoiler__content {
+    &:checked~.footer-spoiler__content {
       max-height: 1000px;
       max-height: all 2s;
       padding: 20px 65px 40px;

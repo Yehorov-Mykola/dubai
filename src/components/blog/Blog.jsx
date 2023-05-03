@@ -49,7 +49,7 @@ function Blog() {
   
   useEffect(() => {  
     search();
-  }, [filters, t("blog.cards", { returnObjects: true })])
+  }, [filters, data])
 
   return (
     <section className="blog">

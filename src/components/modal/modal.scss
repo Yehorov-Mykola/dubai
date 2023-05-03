@@ -1,4 +1,5 @@
 @import './../../assets/consts/colors.scss';
+@import './../../assets/mixins/mixins';
 
 .modal{
     &-box{
@@ -10,8 +11,15 @@
         z-index: 3;
         position: relative;
         color:$color-black;
-        top: -160px;
         top: 0;
+        @include onLaptop {
+            padding: 40px 20px;
+        }
+
+        @include onTablet {
+            padding: 30px 10px;
+            min-height:auto;
+        }
     }   
     &__btn-wrapper{
         display: flex;
@@ -28,7 +36,7 @@
         bottom: 0;
         top: 0;
         background: rgba(39, 39, 39, 0.9);
-        z-index: 3;
+        z-index: 5;
         overscroll-behavior: contain;
         display: flex;
         align-items: center;
@@ -39,6 +47,15 @@
         font-size: 48px;
         line-height: 59px;
         font-weight: 700;
+        @include onLaptop {
+            font-size: 35px;
+            line-height: 40px;
+        }
+
+        @include onTablet {
+            font-size: 25px;
+            line-height: 30px;
+        }
     }
     &__subtitle{
         font-style: normal;

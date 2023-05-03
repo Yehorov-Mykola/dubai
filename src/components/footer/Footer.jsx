@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Modal from "../modal/Modal";
 import FooterCategory from "./footerCategory/FooterCategory";
+import FooterSpoilers from "./footerSpoilers/FooterSpoilers";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 
 function Footer() {
@@ -19,7 +21,7 @@ function Footer() {
       setData(response.data);
     });
   }, []);
-
+  const [t] = useTranslation(["translation"]);
 
   return (
     <>
@@ -32,19 +34,20 @@ function Footer() {
           </div>
           <nav className="footer-menu">
             <ul className="footer-menu-items">
-              {footerData?.menu?.map((item, index) => (
+              {t("footer.menu", { returnObjects: true }).map((item, index) => (
                 <li key={index} className="footer-menu-item">
                   <FooterCategory  menuItem={item} onOpen={() => setIsModalOpen(true)}/>
                 </li>
               ))}
             </ul>
+            <FooterSpoilers />
           </nav>
         </div>
         <div className="footer-copyright">
           <div className="container">
             <div className="footer-copyright__inner">
               <h3 className="footer-copyright__title">
-                {footerData?.copyright?.title}
+                {t("footer.copyright.title")}
               </h3>
               <div className="footer-copyright__social">
                 {footerData?.copyright?.social?.map((item, index) => (

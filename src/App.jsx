@@ -1,25 +1,25 @@
-import './App.scss';
-import './assets/reset.scss';
+import "./App.scss";
+import "./assets/reset.scss";
 
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Main from "./components/main/Main";
-import Blog from './components/blog/Blog';
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
+import Blog from "./components/blog/Blog";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">      
+    <div className="App">
       <BrowserRouter>
-      <Header/>
-        <Routes>     
+        <Header />
+        <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />   
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       <Footer/>
       </BrowserRouter>

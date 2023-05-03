@@ -1,51 +1,65 @@
 @import './assets/fonts.scss';
 @import './assets/consts/colors.scss';
+@import './../src/assets/mixins/mixins';
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Gilroy", serif;
   font-weight: 400;
   background-color: $color-dark;
   color: $color-white;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.container{
+.container {
   margin: 0px auto;
   padding: 0 10px;
   max-width: 1800px;
-  width: 100%;  
+  width: 100%;
 
-  &--reviews{
+  &--reviews {
     overflow-x: hidden;
-    min-height: 490px;
+    min-height: 510px;
+    @include onTablet {
+      min-height: 440px;
   }
-  &--middle{
+  }
+
+  &--middle {
     max-width: 1110px;
     overflow: visible;
   }
-  &--narrow{
+
+  &--narrow {
     max-width: 730px;
   }
 }
 
-.section-title{
+.section-title {
   font-size: 70px;
   line-height: 85px;
   font-weight: 700;
   color: $color-white;
+  @include onLaptop {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  @include onTablet {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
-.swiper-pagination{
-  z-index: 2!important;
+.swiper-pagination {
+  z-index: 2 !important;
 }
 
-.no-scroll{
+.no-scroll {
   overflow: hidden;
 }
