@@ -46,14 +46,55 @@ a {
   line-height: 85px;
   font-weight: 700;
   color: $color-white;
+
   @include onLaptop {
+    font-size: 50px;
+    line-height: 80px;
+  }
+  
+  @include onTablet {
     font-size: 30px;
     line-height: 37px;
   }
-  @include onTablet {
-    font-size: 24px;
-    line-height: 30px;
-  }
+}
+
+.breadcrumb-list{
+  display: flex;
+  flex-wrap: nowrap;
+  &__item{
+    padding-right: 15px;
+    margin-right: 10px;
+    position: relative;
+    a{
+      font-size: 14px;
+      line-height: 16px;
+      font-family: 'Work Sans', sans-serif;
+      color: $color-white;
+      overflow: hidden;
+    }
+    
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url(./../public/img/svg/arrow-pag-gray.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 5px;
+      height: 10px;
+      right: 0;
+      bottom: 2px;
+    }
+    &:last-child{
+      margin-right: 0;
+      padding-right: 0;     
+      a{
+        color: $color-gray;
+      }
+      &::before{
+        width: 0;
+      }
+    }
+  }  
 }
 
 .swiper-pagination {

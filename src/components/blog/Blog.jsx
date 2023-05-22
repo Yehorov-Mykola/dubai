@@ -4,6 +4,7 @@ import axios from "axios";
 import BlogItem from "./blogItem/BlogItem";
 import ReactPaginate from "react-paginate";
 import { useTranslation } from "react-i18next";
+import {useMedia} from 'use-media';
 
 function Blog() {
   const [data, setData] = useState([]);
@@ -13,7 +14,10 @@ function Blog() {
   const [currentItems, setCurrentItems] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 6;
+  const isDesktop = useMedia ({maxWidth: "760px"})
+
+  let itemsPerPage = 6;
+  if (isDesktop) itemsPerPage = 5;
 
   const [t] = useTranslation(["translation"]);
 
@@ -49,11 +53,11 @@ function Blog() {
   
   useEffect(() => {  
     search();
-  }, [filters, data])
+  }, [filters, t])
 
   return (
     <section className="blog">
-      <div className="container">
+      <div className="blog__container container">
         <div className="blog__up">
           <h2 className="section-title">{t("blog.title")}</h2>
           <form  className="blog__form">

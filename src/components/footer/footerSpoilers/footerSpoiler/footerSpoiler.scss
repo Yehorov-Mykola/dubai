@@ -6,27 +6,19 @@
     display: block;
     position: relative;
     cursor: pointer;
-    padding: 20px 0px;
+    padding: 15px 0px;
     margin: 0;
-    font-weight: 400;
+    line-height: 21px;
     font-size: 18px;
-    line-height: 130%;
-    font-family: 'Work Sans';
-    border-top: 1px solid $color-light-gray;
+    font-family: 'Work Sans', sans-serif;
+    border-bottom: 1px solid #3A3A3A;
+    color: $color-light-gray;
 
-    @include onLaptop {
-      line-height: 130%;
-      font-size: 16px;
-    }
-    @include onTablet {
-      line-height: 130%;
-      font-size: 12px;
-    }
 
     &:before {
       content: "";
       position: absolute;
-      background-image: url(./../../../../../public/img/svg/arrow-right-yellow.svg);
+      background-image: url(./../../../../../public/img/svg/arrow-right-grey.svg);
       background-repeat: no-repeat;
       background-size: contain;
       width: 13px;

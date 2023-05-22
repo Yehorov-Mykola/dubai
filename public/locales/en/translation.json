@@ -7,8 +7,8 @@
         "href": "/blog"
       },
       {
-        "title": "about",
-        "href": "/about"
+        "title": "services",
+        "href": "/services"
       },
       {
         "title": "contact",
@@ -632,6 +632,7 @@
       {
         "title": "Buy",
         "link": "/buy",
+        "id": "booter-1",
         "submenu":
           [
             {
@@ -663,6 +664,7 @@
       {
         "title": "Services",
         "href": "/services",
+        "id": "footer-2",
         "submenu":
           [
             {
@@ -694,6 +696,7 @@
       {
         "title": "Information",
         "href": "/information",
+        "id": "footer-3",
         "submenu":
           [
             {
@@ -725,6 +728,7 @@
       {
         "title": "About company",
         "href": "/about",
+        "id": "footer-4",
         "submenu":
           [
             {
@@ -751,7 +755,8 @@
       },
       {
         "title": "Contact",
-        "href": "/contact",
+        "href": "/contact",        
+        "id": "footer-5",
         "btn": "Book a consultation",
         "submenu":
           [
@@ -899,5 +904,80 @@
         "category": "Building"  
       }
     ]
-  }  
+  },
+  "services":{
+    "title": "Furnished Apartments <span>in Dubai</span>",
+    "subtitle": "Rent",
+    "navigation": [
+      {
+      "title":"Main",
+      "link":"/"
+      }, 
+      {
+        "title":"Services",
+        "link":"/services"
+      },
+      {
+        "title":"Furnished Apartments in Dubai",
+        "link":"/services"
+      }
+    ],
+    "text": "<p>This response is important for our ability to learn from mistakes, but it alsogives rise to self-criticism, because it is part of the threat-protection system. In other words, what keeps us safe can go too far, and keep us too safe. In fact it can trigger self-censoring.</p>   <p> One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all:</p>",
+    "img": "./img/services/hotel.jpg",
+    "methods": {
+      "title": "Methods for Everyone",
+      "text": "<p>Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken. Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.</p><p>One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.</p>"
+    },
+    "quote": {
+      "text": "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time. emotional sensation of stress from our firs",
+      "author": "Paul",
+      "position": "Elite Author"
+    },
+    "facts": [
+      {
+        "title": "20",
+        "descr": "YEARS WORKING"
+      },
+      {
+        "title": "7",
+        "descr": "TALANTED MANAGERS"
+      },
+      {
+        "title": "100<span>+</span>",
+        "descr": "COMPLITLY PROJECTS"
+      }
+    ],
+    "challenge": {
+      "title": "Challenge",
+      "titleText": "To and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken. Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.",
+      "subtitle": "Everything along the way",
+      "subTitleText": "One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes."
+    },
+    "list": [
+      "Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken.",
+      "Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.",
+      "One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule.",
+      "We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes."
+    ],
+    "table": {
+      "thead": ["Included in the package", "Complete management", "Partial control"],
+      "tbody": [
+        ["Real estate advertising", "true", "true"],
+        ["Search for tenants", "true", "true"],
+        ["Conclusion of a lease agreement", "true", "true"],
+        ["Getting paid", "true", "true"],
+        ["Key handover", "true", "true"],
+        ["Payment processing", "true", "true"],
+        ["Dealing with repair requests", "true", "true"],
+        ["DEWA connection (electricity/water)", "true", "true"],
+        ["Registration of the rental agreement Ejari", "true", "true"],
+        ["Separate administrator", "true", "true"],
+        ["Detailed inspection of the object", "false", "true"],
+        ["Property preparation before arrival", "false", "true"],
+        ["Reporting", "false", "true"],
+        ["Repair Request Management", "false", "true"],
+        ["Repair management", "false", "true"]
+      ]
+    }
+  }
 }

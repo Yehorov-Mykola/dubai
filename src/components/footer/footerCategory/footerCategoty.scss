@@ -1,24 +1,37 @@
 @import './../../../assets/mixins/_mixins';
 @import './../../../assets/consts/colors.scss';
 
-.footer-category{
+.footer-category {
     font-size: 18px;
     line-height: 21px;
-    font-family: 'Work Sans', sans-serif;
-        &__title{
-            color: $color-light-gray;
-        }    
-        &__submenu{
-            margin-top: 40px;
-        }
-        &__submenu-item{
+    font-family: 'Work Sans', sans-serif;   
+
+
+    &__title {
+        color: $color-light-gray;
+    }
+
+    &__submenu {
+        margin-top: 40px;
+        @include onTablet {
             margin-top: 20px;
         }
-        &__submenu-btn{
-            margin-top: 75px;
+    }
+
+    &__submenu-item {
+        margin-top: 20px;
+    }
+
+    &__submenu-btn {
+        margin-top: 75px;
+        @include onTablet {
+            margin-top: 50px;
+            text-align: center;
         }
-        &__submenu-link{
-            color: $color-light-gray;
-            font-weight: 300;
-        }
+    }
+
+    &__submenu-link {
+        color: $color-light-gray;
+        font-weight: 300;
+    }
 }

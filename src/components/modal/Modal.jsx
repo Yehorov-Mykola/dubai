@@ -4,6 +4,7 @@ import React, {useEffect} from "react";
 import useOutsideClick from "../../assets/hooks/useOutsideClick";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+//import { CSSTransition } from "react-transition-group";
 import { useTranslation } from "react-i18next";
 
 function Modal({ onClose, opened }) {

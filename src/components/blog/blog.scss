@@ -5,14 +5,20 @@
 .blog {
     padding-top: 180px;
     margin-bottom: 170px;
+    @include onTablet {
+        padding-top: 130px;
+        margin-bottom: 120px;
+    }
 
     &__items {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 70px;
-
-    }
+        @include onTablet {
+            justify-content: space-around;
+            margin-top: 30px;
+        }    }
     &__up
     {
         display: flex;
@@ -30,6 +36,12 @@
             width: 30px;
             bottom: 30%;
             right: 22px;
+            @include onLaptop {
+                bottom: 18%;
+            }
+        }
+        @include onTablet {
+            display: none;
         }
     }
     &__input{
@@ -42,6 +54,12 @@
         font-size: 16px;
         outline: none;
         border: 1px solid $color-gray;
+        @include onLaptop {
+            width: 510px;
+            line-height: 26px;
+            font-size: 16px;
+            padding: 10px 60px 10px 20px;
+        }
 
         
         &::placeholder{
@@ -61,6 +79,9 @@
     font-size: 14px;
     padding: 4px 0;
     list-style: none;
+    @include onTablet {
+        margin: 0;
+    }
 
     .page-num {
         padding: 8px 15px;
@@ -73,6 +94,9 @@
             position: relative;
             color: transparent;
             margin: 0 10px;
+            @include onTablet {
+                margin: 0;
+            }
             &::after {
 
                 position: absolute;

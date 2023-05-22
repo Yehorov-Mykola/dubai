@@ -11,6 +11,9 @@
     text-decoration: none;
     outline: none;
     transition: all .5s;
+    @include onLaptop {
+        margin-bottom: 30px;
+    }
 
     &__img{
         width: 100%;

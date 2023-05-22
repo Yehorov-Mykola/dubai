@@ -1,10 +1,11 @@
 import "./footerSpoilers.scss";
 import FooterSpoiler from "./footerSpoiler/FooterSpoiler";
+import FooterCategory from "./../footerCategory/FooterCategory";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 
-function FooterSpoilers() {
+function FooterSpoilers({onOpen}) {
   const [data, setData] = useState(false);
   const faqData = data?.main?.faq;
 
@@ -17,15 +18,26 @@ function FooterSpoilers() {
   }, []);
 
   return (
-    <section className="footer-spoilers">
+    <div className="footer-spoilers">
       <div className="container container--middle">
         <div className="footer-spoilers__inner">
-          {t("main.faq.spoilers", { returnObjects: true }).map((item, index) => (
-            <FooterSpoiler key={index} item={item} />
-          ))}
+          {t("footer.menu", { returnObjects: true }).map(function(item, index) {
+              if (item.id !== "footer-5")
+            {
+              return <FooterSpoiler key={index} item={item} />
+            }
+          })}
         </div>
       </div>
-    </section>
+      <div className="footer-spoilers__inner">
+          {t("footer.menu", { returnObjects: true }).map(function(item, index) {
+              if (item.id === "footer-5")
+            {
+              return <FooterCategory key={index}  menuItem={item} onOpen={onOpen}/>
+            }
+          })}
+        </div>
+    </div>
   );
 }
 export default FooterSpoilers;

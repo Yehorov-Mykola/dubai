@@ -12,10 +12,9 @@
     }
     
     &__img{
-        height:90vh;
+        height: calc(100vh - 80px);
         width: 100%;
         @include onBigLaptop {
-            height:90vh;
             width:auto;
         }
     }

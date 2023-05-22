@@ -40,7 +40,7 @@ function Footer() {
                 </li>
               ))}
             </ul>
-            <FooterSpoilers />
+            <FooterSpoilers onOpen={() => setIsModalOpen(true)}/>
           </nav>
         </div>
         <div className="footer-copyright">

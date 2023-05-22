@@ -6,6 +6,7 @@ import Modal from "../modal/Modal";
 import useOutsideClick from "../../assets/hooks/useOutsideClick";
 import i18n from "./../../_i18n/_i18n";
 import { useTranslation } from "react-i18next";
+import {useMedia} from 'use-media';
 import axios from "axios";
 
 function Header() {
@@ -13,8 +14,10 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isShowSubmenu, setIsShowSubmenu] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isModalClosed, setIsModalClosed] = useState(false);
   const [activeItem, setActiveItem] = useState("en");
+  const isDesktop = useMedia ({maxWidth: "1024px"})
+
+  
 
   const logoData = data.header?.logo;
   const phoneData = data.header?.phone;
@@ -28,6 +31,10 @@ function Header() {
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
+  const toggleSubMenu = () => setIsShowSubmenu(false);
+
+  const { ref } = useOutsideClick(toggleSubMenu);
+
   const [t] = useTranslation(["translation"]);
 
   return (
@@ -35,7 +42,7 @@ function Header() {
       <header className="header">
         <div className="container">
           <div className="header__inner">
-            <NavLink to={logoData?.href} className="logo">
+            <NavLink to={logoData?.href} className="logo" onClick={isDesktop && toggleDropdown}>
               {logoData?.title}{" "}
               <span className="logo__subtitle">{logoData?.subtitle}</span>
             </NavLink>
@@ -56,15 +63,15 @@ function Header() {
                       className={`menu__link menu__link-btn ${
                         isShowSubmenu ? "menu__link-btn--active" : ""
                       }`}
-                      onClick={() => setIsShowSubmenu((prev) => !prev)}
+                      onClick={()=> setIsShowSubmenu(!isShowSubmenu)}
                     >
                       {t("header.submenuBtn")}
                     </button>
                     {isShowSubmenu && (
-                      <ul className="submenu">
+                      <ul className="submenu" ref={ref}>
                         {t("header.submenu", { returnObjects: true }).map(
                           (item, index) => (
-                            <li className="submenu__item" key={index}>
+                            <li className="submenu__item" key={index} >
                               <NavLink className="submenu__link" to={item.href}>
                                 {item.title}
                               </NavLink>
@@ -77,7 +84,8 @@ function Header() {
                   {t("header.menu", { returnObjects: true }).map(
                     (item, index) => (
                       <li className="menu__list-item" key={index}>
-                        <NavLink className="menu__link" to={item.href}>
+                        <NavLink className="menu__link" to={item.href} onClick={isDesktop && toggleDropdown}
+                        >
                           {item.title}
                         </NavLink>
                       </li>

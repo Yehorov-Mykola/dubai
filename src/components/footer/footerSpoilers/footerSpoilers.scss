@@ -4,11 +4,8 @@
   display: none;
   margin-bottom: 122px;
   @include onLaptop {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
     display: block;
-  }
-  @include onTablet {
-    margin-bottom: 40px;
   }
   &__inner{
     margin-top: 30px;

@@ -3,13 +3,14 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Button from "../button/Button";
-import useOutsideClick from "../../assets/hooks/useOutsideClick";
+import {useMedia} from 'use-media';
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 function Contact() {
   const [t] = useTranslation(["translation"]);
   const [submit, setSubmit] = useState(false);
+  const isTablet = useMedia ({maxWidth: "760px"})
 
   const SignupSchema = Yup.object().shape({
     name: Yup.string().min(2, t("contact.form.short")),
@@ -31,17 +32,7 @@ function Contact() {
       <div className="contact__content">
         <div className="container">
           <div className="contact__map-wrapper">
-            <iframe
-              className="contact__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57800.05312018313!2d55.140557493766835!3d25.118669107463557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b43c675c243%3A0x7dfdb7a273cf2c58!2zQWwgU3Vmb3VoIC0gRHViYWkgTWVkaWEgQ2l0eSAtINCU0YPQsdCw0ZcgLSDQntCxJ9GU0LTQvdCw0L3RliDQkNGA0LDQsdGB0YzQutGWINCV0LzRltGA0LDRgtC4!5e0!3m2!1suk!2sua!4v1682763526622!5m2!1suk!2sua"
-              width="100%"
-              height="770"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="map"
-            ></iframe>
-            <div className="map-info">
+          <div className="map-info">
               <h3
                 className="map-info__country"
                 dangerouslySetInnerHTML={{ __html: t("contact.country") }}
@@ -62,6 +53,16 @@ function Contact() {
                 )}
               </div>
             </div>
+            <iframe
+              className="contact__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57800.05312018313!2d55.140557493766835!3d25.118669107463557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b43c675c243%3A0x7dfdb7a273cf2c58!2zQWwgU3Vmb3VoIC0gRHViYWkgTWVkaWEgQ2l0eSAtINCU0YPQsdCw0ZcgLSDQntCxJ9GU0LTQvdCw0L3RliDQkNGA0LDQsdGB0YzQutGWINCV0LzRltGA0LDRgtC4!5e0!3m2!1suk!2sua!4v1682763526622!5m2!1suk!2sua"
+              width="100%"
+              height="100%"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="map"
+            ></iframe>            
           </div>
         </div>
         <div className="contact-form">
@@ -143,7 +144,7 @@ function Contact() {
                       <div>{errors.message}</div>
                     ) : null}
                   </label>
-                  <Button submit>{t("contact.form.btn")}</Button>
+                  <Button submit width={isTablet ? "100%" : "" }>{t("contact.form.btn")}</Button>
                   {submit && (
                     <p className="contact-form__submit">
                       {t("contact.form.submit")}
