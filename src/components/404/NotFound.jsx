@@ -8,10 +8,6 @@ import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 function NotFound() {
-  const [t] = useTranslation(["translation"]);
-  const isTablet = useMedia ({maxWidth: "760px"})
-
-
 
   return (
     <section className="contact">

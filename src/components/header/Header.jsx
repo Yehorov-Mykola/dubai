@@ -31,9 +31,9 @@ function Header() {
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
-  const toggleSubMenu = () => setIsShowSubmenu(false);
+  //const toggleSubMenu = () => setIsShowSubmenu(false);
 
-  const { ref } = useOutsideClick(toggleSubMenu);
+  const { ref } = useOutsideClick(() => setIsShowSubmenu(false));
 
   const [t] = useTranslation(["translation"]);
 
@@ -50,20 +50,20 @@ function Header() {
               <nav className="menu">
                 <button
                   className={`menu__btn menu__btn${isOpen ? "--active" : ""}`}
-                  onClick={toggleDropdown}
+                  onClick={() => setIsOpen(true)}
                 >
                   <span className="menu__btn-line"></span>
                 </button>
 
-                <ul
+                <ul ref = {ref}
                   className={`menu__list ${isOpen ? "menu__list--open" : ""}`}
                 >
-                  <li className="menu__list-item ">
+                  <li className="menu__list-item">
                     <button
                       className={`menu__link menu__link-btn ${
                         isShowSubmenu ? "menu__link-btn--active" : ""
                       }`}
-                      onClick={()=> setIsShowSubmenu(!isShowSubmenu)}
+                      onClick={()=> setIsShowSubmenu((prev) => !prev)}
                     >
                       {t("header.submenuBtn")}
                     </button>

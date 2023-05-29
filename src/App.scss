@@ -26,9 +26,10 @@ a {
   &--reviews {
     overflow-x: hidden;
     min-height: 510px;
+
     @include onTablet {
       min-height: 440px;
-  }
+    }
   }
 
   &--middle {
@@ -51,29 +52,41 @@ a {
     font-size: 50px;
     line-height: 80px;
   }
-  
+
   @include onTablet {
     font-size: 30px;
     line-height: 37px;
   }
+
+  &--services {
+    line-height: 45px;
+    font-size: 32px;
+  }
 }
 
-.breadcrumb-list{
+.breadcrumb-list {
   display: flex;
   flex-wrap: nowrap;
-  &__item{
+
+  &__item {
     padding-right: 15px;
     margin-right: 10px;
     position: relative;
-    a{
+
+    a {
       font-size: 14px;
       line-height: 16px;
       font-family: 'Work Sans', sans-serif;
       color: $color-white;
       overflow: hidden;
+
+      @include onLaptop {
+        font-size: 12px;
+        line-height: 14px;
+      }
     }
-    
-    &::before{
+
+    &::before {
       position: absolute;
       content: "";
       background-image: url(./../public/img/svg/arrow-pag-gray.svg);
@@ -84,17 +97,20 @@ a {
       right: 0;
       bottom: 2px;
     }
-    &:last-child{
+
+    &:last-child {
       margin-right: 0;
-      padding-right: 0;     
-      a{
+      padding-right: 0;
+
+      a {
         color: $color-gray;
       }
-      &::before{
+
+      &::before {
         width: 0;
       }
     }
-  }  
+  }
 }
 
 .swiper-pagination {

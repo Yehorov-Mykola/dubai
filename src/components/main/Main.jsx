@@ -14,6 +14,8 @@ import { Pagination, Navigation, Scrollbar, Autoplay } from "swiper";
 import "swiper/css/autoplay";
 import { useTranslation } from "react-i18next";
 
+import Articles from "../articles/Articles";
+
 function Main() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [data, setData] = useState(false);
@@ -129,23 +131,7 @@ function Main() {
 
       <MailForm title={t("mailForm.title")} subtitle={t("mailForm.subtitle")} />      
 
-      <section className="useful-articles">
-        <div className="container container--middle">
-        <div className="useful-articles__up">
-          <h2 className="section-title">
-            {t("main.usefulArticles.title")}
-          </h2>
-          <NavLink className="useful-articles__link" to={t("main.usefulArticles.link.href")}>
-            {t("main.usefulArticles.link.title")}
-          </NavLink>
-        </div>
-          <div className="useful-articles__cards">
-          {t("main.usefulArticles.cards", { returnObjects: true }).map((item, index) => (
-                <UsefulArticlesCard key={index} item={item} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <Articles  data={t("main.usefulArticles", { returnObjects: true })}/>
 
       <Reviews />
 

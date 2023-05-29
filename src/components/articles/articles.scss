@@ -1,0 +1,77 @@
+@import './../../assets/mixins/mixins.scss';
+@import './../../assets/consts/colors.scss';
+
+
+.articles{
+    margin-bottom: 170px;
+    @include onLaptop {
+        margin-bottom: 80px;
+    }
+    @include onTablet {
+        margin-bottom: 40px;
+    }
+
+    &__up{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include onTablet {
+            line-height: 10px;          
+            font-size: 8px;
+            padding-right: 15px;
+        }
+    }
+    &__link{
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 600;
+        color: $color-gray;
+        padding-right: 45px;
+        position: relative;
+        @include onLaptop {
+            line-height: 15px;
+            font-size: 12px;
+            padding-right: 20px;
+        }
+        @include onTablet {
+            line-height: 10px;          
+            font-size: 8px;
+            padding-right: 15px;
+        }
+
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(./../../../public/img/svg/arrow-right-grey.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: 0;
+            bottom: 0;
+            width: 12px;
+            height: 20px;
+            @include onLaptop {
+                width: 10px;
+                height: 18px;
+                bottom: -3px;
+            }
+            @include onTablet {
+                width: 7px;
+                bottom: -7px;
+            }
+        }
+    }
+    &__cards{
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        @include onLaptop {
+            justify-content:inherit;
+
+        }
+        @include onTablet {
+            margin-top: 20px; 
+            display: block;          
+        }
+    }
+}

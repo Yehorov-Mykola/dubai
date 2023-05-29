@@ -1,5 +1,4 @@
 import "./footer.scss";
-import Button from "../button/Button";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Modal from "../modal/Modal";
@@ -10,8 +9,6 @@ import axios from "axios";
 
 function Footer() {
   const [data, setData] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [isShowSubmenu, setIsShowSubmenu] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const footerData = data?.footer;

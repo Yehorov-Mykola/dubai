@@ -978,6 +978,36 @@
         ["Repair Request Management", "false", "true"],
         ["Repair management", "false", "true"]
       ]
+    },
+    "articles":{
+      "title": "We will also propose",
+      "link": {
+        "title": "View all articles",
+        "href": "/blog"
+      },
+      "cards":[
+        {
+          "title": "Mortgage Registration",
+          "text": "A person applying for a mortgage in the United Arab Emirates must meet the following requirements",
+          "btn": "Learn more",
+          "url": "./img/propose/propose-1.jpg",
+          "link": "/"
+        },
+        {
+          "title": "Mortgage Registration",
+          "text": "A person applying for a mortgage in the United Arab Emirates must meet the following requirements",
+          "btn": "Learn more",
+          "url": "./img/propose/propose-2.jpg",
+          "link": "/"
+        },
+        {
+          "title": "Mortgage Registration",
+          "text": "A person applying for a mortgage in the United Arab Emirates must meet the following requirements",
+          "btn": "Learn more",
+          "url": "./img/propose/propose-3.jpg",
+          "link": "/"
+        }
+      ]
     }
   }
 }

@@ -1,13 +1,13 @@
 import "./services.scss";
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Articles from "../articles/Articles";
 import { useTranslation } from "react-i18next";
 import MailForm from "../mailForm/MailForm";
 import { useMedia } from "use-media";
 
 function Services() {
   const [t] = useTranslation(["translation"]);
-  const isTablet = useMedia({ maxWidth: "760px" });
 
   function checkList(text){
     if (text === "true"){
@@ -207,6 +207,8 @@ function Services() {
           </div>
         </div>
       </div>
+
+      <Articles  data={t("services.articles", { returnObjects: true })} services/>
     </section>
   );
 }

@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import Button from "../../../button/Button";
 
 function FooterSpoiler({ item }) {
-  const [t] = useTranslation(["translation"]);
   return (
     <div className="footer-spoiler">
       <input
