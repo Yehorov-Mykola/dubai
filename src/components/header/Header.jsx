@@ -6,7 +6,8 @@ import Modal from "../modal/Modal";
 import useOutsideClick from "../../assets/hooks/useOutsideClick";
 import i18n from "./../../_i18n/_i18n";
 import { useTranslation } from "react-i18next";
-import {useMedia} from 'use-media';
+import { CSSTransition } from "react-transition-group";
+import { useMedia } from "use-media";
 import axios from "axios";
 
 function Header() {
@@ -15,9 +16,7 @@ function Header() {
   const [isShowSubmenu, setIsShowSubmenu] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("en");
-  const isDesktop = useMedia ({maxWidth: "1024px"})
-
-  
+  const isDesktop = useMedia({ maxWidth: "1024px" });
 
   const logoData = data.header?.logo;
   const phoneData = data.header?.phone;
@@ -31,8 +30,6 @@ function Header() {
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
-  //const toggleSubMenu = () => setIsShowSubmenu(false);
-
   const { ref } = useOutsideClick(() => setIsShowSubmenu(false));
 
   const [t] = useTranslation(["translation"]);
@@ -42,7 +39,11 @@ function Header() {
       <header className="header">
         <div className="container">
           <div className="header__inner">
-            <NavLink to={logoData?.href} className="logo" onClick={isDesktop && toggleDropdown}>
+            <NavLink
+              to={logoData?.href}
+              className="logo"
+              onClick={isDesktop && toggleDropdown}
+            >
               {logoData?.title}{" "}
               <span className="logo__subtitle">{logoData?.subtitle}</span>
             </NavLink>
@@ -50,12 +51,13 @@ function Header() {
               <nav className="menu">
                 <button
                   className={`menu__btn menu__btn${isOpen ? "--active" : ""}`}
-                  onClick={() => setIsOpen(true)}
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   <span className="menu__btn-line"></span>
                 </button>
 
-                <ul ref = {ref}
+                <ul
+                  ref={ref}
                   className={`menu__list ${isOpen ? "menu__list--open" : ""}`}
                 >
                   <li className="menu__list-item">
@@ -63,7 +65,7 @@ function Header() {
                       className={`menu__link menu__link-btn ${
                         isShowSubmenu ? "menu__link-btn--active" : ""
                       }`}
-                      onClick={()=> setIsShowSubmenu((prev) => !prev)}
+                      onClick={() => setIsShowSubmenu((prev) => !prev)}
                     >
                       {t("header.submenuBtn")}
                     </button>
@@ -71,9 +73,9 @@ function Header() {
                       <ul className="submenu" ref={ref}>
                         {t("header.submenu", { returnObjects: true }).map(
                           (item, index) => (
-                            <li className="submenu__item" key={index} >
-                              <NavLink className="submenu__link" to={item.href}>
-                                {item.title}
+                            <li className="submenu__item" key={index}>
+                              <NavLink className="submenu__link" to={item.href} onClick={isDesktop && toggleDropdown}>
+                                {item.title} 
                               </NavLink>
                             </li>
                           )
@@ -84,7 +86,10 @@ function Header() {
                   {t("header.menu", { returnObjects: true }).map(
                     (item, index) => (
                       <li className="menu__list-item" key={index}>
-                        <NavLink className="menu__link" to={item.href} onClick={isDesktop && toggleDropdown}
+                        <NavLink
+                          className="menu__link"
+                          to={item.href}
+                          onClick={isDesktop && toggleDropdown}
                         >
                           {item.title}
                         </NavLink>
@@ -95,7 +100,10 @@ function Header() {
                     <Button onClick={() => setIsModalOpen(true)}>
                       {t("header.button")}
                     </Button>
-                    <NavLink className="menu__phone menu__phone--mobile" to={phoneData?.href}>
+                    <NavLink
+                      className="menu__phone menu__phone--mobile"
+                      to={phoneData?.href}
+                    >
                       {phoneData?.title}
                     </NavLink>
                     <div className="menu__languages menu__languages--mobile">
@@ -152,12 +160,17 @@ function Header() {
         </div>
       </header>
 
-      {isModalOpen && (
+      <CSSTransition
+        in={isModalOpen}
+        timeout={200}
+        classNames="modal"
+        unmountOnExit
+      >
         <Modal
           className={isModalOpen ? "open" : "close"}
           onClose={() => setIsModalOpen(false)}
         />
-      )}
+      </CSSTransition>
     </>
   );
 }

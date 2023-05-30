@@ -4,20 +4,17 @@ import { NavLink } from "react-router-dom";
 import Articles from "../articles/Articles";
 import { useTranslation } from "react-i18next";
 import MailForm from "../mailForm/MailForm";
-import { useMedia } from "use-media";
 
 function Services() {
   const [t] = useTranslation(["translation"]);
 
-  function checkList(text){
-    if (text === "true"){
-      return "✓"
-    }
-    else if (text === "false"){
-      return ""
-    }
-    else{
-      return text
+  function checkList(text) {
+    if (text === "true") {
+      return "✓";
+    } else if (text === "false") {
+      return "";
+    } else {
+      return text;
     }
   }
 
@@ -178,37 +175,44 @@ function Services() {
 
         <div className="services__table">
           <div className="container container--middle">
-            <table className="table">
-              <thead className="table__head">
-                <tr className="table__head-line">
-                  {t("services.table.thead", { returnObjects: true }).map(
-                    (item, index) => (
-                      <th className="table__item" key={index}>
-                        {item}
-                      </th>
-                    )
-                  )}
-                </tr>
-              </thead>
-              <tbody className="table__body">
-                {t("services.table.tbody", { returnObjects: true }).map(
-                  (item, index) => (
-                    <tr className="table__body-line" key={index}>
-                      {item.map((item, index) => (
-                        <td className="table__item" key={index}>
-                          {checkList (item)}
-                        </td>
-                      ))}
+            <div className="table-wrapper">
+              <div className="mobile-overflow">
+                <table className="table">
+                  <thead className="table__head">
+                    <tr className="table__head-line">
+                      {t("services.table.thead", { returnObjects: true }).map(
+                        (item, index) => (
+                          <th className="table__item" key={index}>
+                            {item}
+                          </th>
+                        )
+                      )}
                     </tr>
-                  )
-                )}
-              </tbody>
-            </table>
+                  </thead>
+                  <tbody className="table__body">
+                    {t("services.table.tbody", { returnObjects: true }).map(
+                      (item, index) => (
+                        <tr className="table__body-line" key={index}>
+                          {item.map((item, index) => (
+                            <td className="table__item" key={index}>
+                              {checkList(item)}
+                            </td>
+                          ))}
+                        </tr>
+                      )
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <Articles  data={t("services.articles", { returnObjects: true })} services/>
+      <Articles
+        data={t("services.articles", { returnObjects: true })}
+        services
+      />
     </section>
   );
 }

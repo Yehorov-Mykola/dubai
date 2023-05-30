@@ -72,8 +72,6 @@ function LatestProgect({ title }) {
             modules={[Pagination, Scrollbar]}
             style={{ width: "100%" }}
             spaceBetween={20}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             breakpoints={{

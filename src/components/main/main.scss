@@ -14,9 +14,7 @@
     &__img{
         height: calc(100vh - 80px);
         width: 100%;
-        @include onBigLaptop {
-            width:auto;
-        }
+        object-fit: cover;
     }
     & .swiper__navigation{
         position: absolute;
