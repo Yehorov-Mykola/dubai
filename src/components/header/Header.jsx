@@ -31,6 +31,7 @@ function Header() {
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   const { ref } = useOutsideClick(() => setIsShowSubmenu(false));
+  //виправив як в прикладі
 
   const [t] = useTranslation(["translation"]);
 
@@ -52,12 +53,14 @@ function Header() {
                 <button
                   className={`menu__btn menu__btn${isOpen ? "--active" : ""}`}
                   onClick={() => setIsOpen(!isOpen)}
+                  //лишив, як було. Бо це не так кнопка (гамбургер моб меню/хрестиик його закриття)
                 >
                   <span className="menu__btn-line"></span>
                 </button>
 
                 <ul
                   ref={ref}
+                  //виправив як в прикладі
                   className={`menu__list ${isOpen ? "menu__list--open" : ""}`}
                 >
                   <li className="menu__list-item">
@@ -65,6 +68,7 @@ function Header() {
                       className={`menu__link menu__link-btn ${
                         isShowSubmenu ? "menu__link-btn--active" : ""
                       }`}
+                      //тут стилі не прибирав
                       onClick={() => setIsShowSubmenu((prev) => !prev)}
                     >
                       {t("header.submenuBtn")}
@@ -167,7 +171,7 @@ function Header() {
         unmountOnExit
       >
         <Modal
-          className={isModalOpen ? "open" : "close"}
+          //className={isModalOpen ? "open" : "close"}
           onClose={() => setIsModalOpen(false)}
         />
       </CSSTransition>
