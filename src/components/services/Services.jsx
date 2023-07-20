@@ -1,5 +1,5 @@
 import "./services.scss";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import Articles from "../articles/Articles";
 import { useTranslation } from "react-i18next";
