@@ -74,7 +74,7 @@ function Header() {
                       {t("header.submenuBtn")}
                     </button>
                     {isShowSubmenu && (
-                      <ul className="submenu" ref={ref}>
+                      <ul className="submenu">
                         {t("header.submenu", { returnObjects: true }).map(
                           (item, index) => (
                             <li className="submenu__item" key={index}>
