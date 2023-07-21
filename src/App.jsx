@@ -1,21 +1,33 @@
-import './App.scss';
-import './assets/reset.scss';
+import "./App.scss";
+import "./assets/reset.scss";
 
-import Header from "./assets/components/header/Header";
-import About from "./assets/components/about/About";
-import Main from "./assets/components/main/Main";
+import Header from "./components/header/Header";
+import About from "./components/about/About";
+import Main from "./components/main/Main";
+import Blog from "./components/blog/Blog";
+import Contact from "./components/contact/Contact";
+import Services from "./components/services/Services";
+import NotFound from "./components/404/NotFound";
+import Footer from "./components/footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">      
+    <div className="App">
       <BrowserRouter>
-      <Header/>
-        <Routes>        
-          <Route path="/" element={<Main />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <Header />
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </ScrollToTop>
+        <Footer />
       </BrowserRouter>
     </div>
   );

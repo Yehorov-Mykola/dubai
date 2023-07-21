@@ -1,0 +1,38 @@
+@import './../../../assets/mixins/_mixins';
+@import './../../../assets/consts/colors.scss';
+
+
+.reviews .swiper{
+    position: static!important;
+    overflow: visible!important;
+
+    &-pagination{
+        bottom: -95px!important;
+        @include onTablet {
+            bottom: -45px!important;
+        }
+
+        &-bullet{
+            background-color: $color-gray!important;
+            width: 13px!important;
+            height: 13px!important;
+            margin: 0 var(--swiper-pagination-bullet-horizontal-gap,8px)!important;
+        }
+        &-bullet-active{
+            background-color: $color-yellow!important;
+        }
+    }
+    &-slide{
+        opacity: 0.3;
+        transition: all .3s;
+        &-active,
+        &-next{
+            opacity: 1;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+

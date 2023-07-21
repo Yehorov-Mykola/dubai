@@ -1,0 +1,13 @@
+@import './../../../assets/mixins/mixins';
+.spoilers{
+  margin-bottom: 122px;
+  @include onLaptop {
+    margin-bottom: 70px;
+  }
+  @include onTablet {
+    margin-bottom: 40px;
+  }
+  &__inner{
+    margin-top: 30px;
+  }
+}

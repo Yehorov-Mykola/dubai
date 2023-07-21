@@ -1,0 +1,67 @@
+@import './../../../../assets/mixins/_mixins';
+@import './../../../../assets/consts/colors.scss';
+
+
+.review-item{
+    max-width: 525px;
+    width: 100%;
+    min-height: 310px;
+    border: 1px solid $color-yellow;
+    padding: 70px 30px 30px 30px;
+    margin-top: 56px;
+    position: relative;
+    @include onLaptop {
+        min-height: 250px;
+    }
+    @include onTablet {
+        max-width: inherit;
+    }
+
+    &::after{
+        position: absolute;
+        content: '”';
+        right: 30px;
+        top: -10px;
+        font-weight: 600;
+        font-size: 120px;
+        line-height: 200px;
+        font-family: 'Work Sans', sans-serif;
+        color: $color-yellow;
+    }    
+    &__img{
+        position: absolute;
+        left: 30px;
+        top: -56px;
+        width: 112px;
+        height: 112px;
+    }
+    &__name{
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__position{
+        font-size: 16px;
+        line-height: 19px;
+        font-family: 'Work Sans', sans-serif;
+        margin-bottom: 35px;
+    }
+    &__company{
+        color: $color-yellow;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 26px;
+        font-family: 'Work Sans', sans-serif;
+        color: $color-gray;
+        @include onLaptop {
+            line-height: 14px;
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,72 @@
+@import './../../../../assets/consts/colors.scss';
+@import './../../../../assets/mixins/mixins';
+
+.footer-spoiler {
+  &__heading {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 15px 0px;
+    margin: 0;
+    line-height: 21px;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    border-bottom: 1px solid #3A3A3A;
+    color: $color-light-gray;
+
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url(./../../../../../public/img/svg/arrow-right-grey.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 13px;
+      height: 20px;
+      right: 0px;
+      transform: rotate(0deg);
+      transition: all 0.1s;
+
+      @include onLaptop {
+        width: 10px;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: none;
+    position: absolute;
+    left: -9999em;
+
+    &:checked~.footer-spoiler__heading:before {
+      transform: rotate(90deg);
+      transition: all 0.1s;
+    }
+
+    &:checked~.footer-spoiler__content {
+      max-height: 1000px;
+      max-height: all 2s;
+      padding: 20px 65px 40px;
+
+      @include onTablet {
+        padding: 20px 10px 40px 30px;
+      }
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 65px 0px;
+    transition: all 0.5s;
+    color: $color-light-gray;
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+
+    @include onTablet {
+      padding: 0px 10px 0px 30px;
+      font-size: 12px;
+    }
+  }
+}

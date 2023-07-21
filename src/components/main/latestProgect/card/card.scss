@@ -1,0 +1,109 @@
+@import './../../../../assets/mixins/_mixins';
+@import './../../../../assets/consts/colors.scss';
+
+.card{
+    position: relative;
+    overflow: hidden;
+    max-width: 430px;
+    width: 100%;
+    height: 572px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    outline: none;
+    color: $color-white;
+    transition: all .5s;
+
+    &:hover .card-info{
+        opacity: 100%;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
+    &__inner{
+        //background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 76.56%, rgba(0, 0, 0, 0.85) 100%);
+        z-index: 100;
+    }
+    &__title{
+        position: absolute;
+        bottom: 85px;
+        left: 40px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 45px;
+        @include onLaptop {
+            line-height: 22px;
+            font-size: 18px;
+            bottom: 25px;
+            left: 15px;
+        }
+    }
+    &-info{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        padding: 45px 30px;
+        background-color: $color-yellow;
+        color: $color-dark;
+        transition: all .3s;
+        @include onLaptop {
+            padding: 15px 10px;
+        }
+
+        &__title{
+            font-size: 32px;
+            line-height: 45px;
+            font-weight: 700;
+            @include onLaptop {
+                line-height: 22px;
+                font-size: 18px;
+            }
+        }
+        &__text{
+            font-size: 22px;
+            line-height: 26px;
+            font-family: 'Work Sans';
+            @include onLaptop {
+                line-height: 14px;
+                font-size: 12px;
+            }
+        }
+        &__link{
+            position: relative;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            font-family: 'Work Sans';
+            color: $color-dark;
+            padding-right: 30px;
+            display: inline-block;
+            @include onLaptop {
+                line-height: 14px;
+                font-size: 12px;
+                padding-right: 18px;
+            }
+
+            &::before{
+                position: absolute;
+                content: "";
+                background: url("./../../../../../public/img/svg/arrow-right.svg");
+                background-repeat: no-repeat;
+                width: 13px;
+                height: 20px;
+                right: 0;
+                bottom: 0;
+                @include onLaptop {
+                    height: 12px;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}

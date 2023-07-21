@@ -1,0 +1,202 @@
+@import './../../assets/mixins/mixins.scss';
+@import './../../assets/consts/colors.scss';
+
+
+.contact {
+    padding-top: 180px;
+    margin-bottom: 170px;
+    @include onLaptop {
+        padding-top: 140px;
+        margin-bottom: 28px;
+    }
+    @include onTablet {
+        padding-top: 120px;
+        margin-bottom: 62px;
+    }
+
+    &__map {
+        &-wrapper {
+            position: relative;
+            margin-top: 90px;
+            height: 770px;
+            @include onLaptop {
+                margin-top: 30px;
+                height: 596px;
+            }
+            @include onTablet {
+                height: 350px;
+            }
+        }
+    }
+
+    &-form {
+        margin-top: 200px;
+        @include onLaptop {
+            margin-top: 70px;
+        }
+        @include onTablet {
+            margin-top: 390px;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 35px;
+            font-weight: 700;
+            color: $color-yellow;
+            @include onLaptop {
+                line-height: 30px;
+                font-size: 24px;
+            }
+
+            span {
+                color: $color-white;
+                display: block;
+            }
+        }
+
+        &__items {
+            margin-top: 75px;
+            @include onLaptop {
+                margin-top: 30px;
+            }
+
+        }
+
+        &__items-up {
+            display: flex;
+            gap: 30px 30px;
+            margin-bottom: 30px;
+            @include onTablet {
+                display: block;
+                margin-bottom: 0;
+            }
+        }
+
+        &__label {
+            max-width: 350px;
+            width: 100%;
+
+            &--text {
+                margin-bottom: 30px;
+                display: block;
+                max-width: 100%;
+                @include onTablet {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__input {
+            border: 1px solid #c9c9c9;
+            background-color: transparent;
+            padding: 15px 18px;
+            color: $color-gray;
+            outline: none;
+            width: 100%;
+            @include onTablet {
+                margin-bottom: 20px;
+            }
+
+            &--textarea {
+                min-height: 220px;
+            }
+        }
+
+        &__submit {
+            margin: 20px 0 0 0;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+}
+
+.map-info {
+    position: absolute;
+    min-height: 605px;
+    top: 80px;
+    left: 345px;
+    width: 544px;
+    background-color: $color-dark;
+    padding: 80px;
+    @include onLaptop {
+        top: 120px;
+        left: 30px;
+        width: 270px;
+        min-height: 350px;
+        padding: 30px;
+    }
+    @include onTablet {
+        position:static;
+        padding: 0;
+    }
+
+    &__country {
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 700;
+        margin-bottom: 33px;
+        @include onLaptop {
+            line-height: 25px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: $color-yellow;
+        }
+    }
+
+    &__adress {
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'Work Sans', sans-serif;
+        margin-bottom: 60px;
+        color: $color-gray;
+        @include onLaptop {
+            line-height: 21px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__phone {
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 700;
+        margin-bottom: 90px;
+        color: $color-white;
+        display: inline-block;
+        @include onLaptop {
+            line-height: 21px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__contact-item {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: 'Work Sans', sans-serif;
+        margin-bottom: 30px;
+        @include onLaptop {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        @include onTablet {
+            margin-bottom: 20px;
+        } 
+
+        span {
+            font-weight: 400;
+            color: $color-gray;
+        }
+
+        &:last-child {
+            margin-bottom: 0px;
+            @include onTablet {
+                width: 130px;
+            }    
+        }
+    }
+}

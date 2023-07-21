@@ -1,0 +1,80 @@
+@import './../../../../assets/consts/colors.scss';
+@import './../../../../assets/mixins/mixins';
+
+.spoiler {
+  &__heading {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    font-family: 'Work Sans';
+    border-top: 1px solid $color-light-gray;
+
+    @include onLaptop {
+      line-height: 130%;
+      font-size: 16px;
+    }
+    @include onTablet {
+      line-height: 130%;
+      font-size: 12px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url(./../../../../../public/img/svg/arrow-right-yellow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 13px;
+      height: 20px;
+      right: 0px;
+      transform: rotate(0deg);
+      transition: all 0.1s;
+
+      @include onLaptop {
+        width: 10px;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: none;
+    position: absolute;
+    left: -9999em;
+
+    &:checked~.spoiler__heading:before {
+      transform: rotate(90deg);
+      transition: all 0.1s;
+    }
+
+    &:checked~.spoiler__content {
+      max-height: 1000px;
+      max-height: all 2s;
+      padding: 20px 65px 40px;
+
+      @include onTablet {
+        padding: 20px 10px 40px 30px;
+      }
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 65px 0px;
+    transition: all 0.5s;
+    color: $color-light-gray;
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+
+    @include onTablet {
+      padding: 0px 10px 0px 30px;
+      font-size: 12px;
+    }
+  }
+}

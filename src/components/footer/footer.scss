@@ -1,0 +1,73 @@
+@import './../../assets/mixins/_mixins';
+@import './../../assets/consts/colors.scss';
+
+.footer {
+    background-color: $color-dark;
+    padding: 70px 0px 30px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    &-logo {
+        text-align: center;
+    }
+
+    &-menu {
+        margin: 40px 0 95px;
+        @include onTablet {
+            margin: 50px 0 60px;
+        }
+    }
+
+    &-menu-items {
+        display: flex;
+        justify-content: space-between;
+
+        @include onLaptop {
+            display: none;
+        }
+    }
+
+    &-copyright {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 30px;
+
+        &__social{
+            @include onTablet {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            @include onTablet {
+                flex-direction:column;
+                align-items: center;
+            }
+        }
+
+        &__link {
+            margin-left: 30px;
+
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+
+        &__title {
+            font-size: 18px;
+            line-height: 160%;
+            font-weight: 300;
+
+            @include onLaptop {
+                line-height: 160%;
+                font-size: 18px;
+            }
+
+            @include onTablet {
+                line-height: 15px;
+                font-size: 12px;
+                order: 1;
+            }
+        }
+    }
+}

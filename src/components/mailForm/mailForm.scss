@@ -1,0 +1,86 @@
+@import './../../assets/mixins/_mixins';
+@import './../../assets/consts/colors.scss';
+
+.mail-form {
+    background-image: url(./../../../public/img/bg-mform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 115px 0 140px;
+    padding: 85px 10px;
+    color: $color-dark;
+
+    @include onLaptop {
+        padding: 45px 35px;
+        margin: 70px 0;
+    }
+
+    @include onTablet {
+        padding: 50px 20px;
+        margin: 40px 0;
+    }
+
+    &__item {
+        @include onLaptop {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 69px;
+        font-family: 'Gilroy';
+        margin-bottom: 55px;
+
+        @include onLaptop {
+            line-height: 87px;
+            font-size: 70px;
+        }
+
+        @include onTablet {
+            line-height: 62px;
+            font-size: 50px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 160%;
+        font-family: 'Work Sans';
+        margin-bottom: 15px;
+
+        @include onLaptop {
+            line-height: 14px;
+            font-size: 12px;
+        }
+    }
+
+    &__input {
+        border: none;
+        line-height: 58px;
+        max-width: 300px;
+        width: 100%;
+        outline: none;
+        padding-left: 45px;
+
+        @include onLaptop {
+            line-height: 40px;
+            padding-left: 15px;
+        }
+    }
+
+    &__label {
+        vertical-align: top
+    }
+
+    &__error {
+        margin-top: 10px;
+        font-weight: 700;
+    }
+}
