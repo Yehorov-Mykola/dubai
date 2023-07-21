@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Villas",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+    "image": "./img/latest-progects/villas.jpg",
+    "link": "See project",
+    "category": "Building"  
+  },
+  {
+    "id": 2,
+    "title": "Hotels",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+    "image": "./img/latest-progects/hotels.jpg",
+    "link": "See project",
+    "category": "Building"  
+  },
+  {
+    "id": 3,
+    "title": "Houses",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+    "image": "./img/latest-progects/houses.jpg",
+    "link": "See project",
+    "category": "Building"  
+  },
+  {
+    "id": 4,
+    "title": "Villas",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+    "image": "./img/latest-progects/villas2.jpg",
+    "link": "See project",
+    "category": "Interior"  
+  },
+  {
+    "id": 5,
+    "title": "Villas",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+    "image": "./img/latest-progects/hotels-2.jpg",
+    "link": "See project",
+    "category": "Interior"  
+  },
+  {
+    "id": 6,
+    "title": "Villas",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+    "image": "./img/latest-progects/villas.jpg",
+    "link": "See project",
+    "category": "Building"  
+  }
+]

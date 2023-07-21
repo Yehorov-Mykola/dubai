@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/dubai/static/css/main.ec3b5ed1.css",
+    "main.js": "/dubai/static/js/main.b0b361d7.js",
+    "static/js/787.29e211bb.chunk.js": "/dubai/static/js/787.29e211bb.chunk.js",
+    "static/media/bg-mform.jpg": "/dubai/static/media/bg-mform.79d3abdf8749dd7aa2c4.jpg",
+    "static/media/bg.jpg": "/dubai/static/media/bg.8adc0b7564ffad9a6cfe.jpg",
+    "static/media/video.jpg": "/dubai/static/media/video.badea44bbeb666b7adcc.jpg",
+    "static/media/Gilroy-SemiboldItalic.woff": "/dubai/static/media/Gilroy-SemiboldItalic.b7e83a7d9d8138dc2c60.woff",
+    "static/media/Gilroy-Bold.woff": "/dubai/static/media/Gilroy-Bold.0607a1bc636f63251ed8.woff",
+    "static/media/Gilroy-Semibold.woff": "/dubai/static/media/Gilroy-Semibold.5b042906a8b58ec4633e.woff",
+    "static/media/Gilroy-Light.woff": "/dubai/static/media/Gilroy-Light.368f09f56e89b3fe11c7.woff",
+    "static/media/Gilroy-Regular.woff": "/dubai/static/media/Gilroy-Regular.ebe86c0337572553acea.woff",
+    "static/media/Gilroy-SemiboldItalic.woff2": "/dubai/static/media/Gilroy-SemiboldItalic.f573f3d8a93d564aa1e6.woff2",
+    "static/media/Gilroy-Bold.woff2": "/dubai/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
+    "static/media/Gilroy-Semibold.woff2": "/dubai/static/media/Gilroy-Semibold.7726b19d33f1b7f4135a.woff2",
+    "static/media/Gilroy-Light.woff2": "/dubai/static/media/Gilroy-Light.c2e7a6dc47e5b9a89a37.woff2",
+    "static/media/Gilroy-Regular.woff2": "/dubai/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
+    "static/media/search.svg": "/dubai/static/media/search.a67d2dba751ce0f55fc2.svg",
+    "index.html": "/dubai/index.html",
+    "static/media/getFetch.cjs": "/dubai/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "static/media/arrow-pag-gray.svg": "/dubai/static/media/arrow-pag-gray.742033b6f5b7d740299d.svg",
+    "static/media/arrow-pag-white.svg": "/dubai/static/media/arrow-pag-white.b1bdfae540ee55d13389.svg",
+    "static/media/arrow-right-yellow.svg": "/dubai/static/media/arrow-right-yellow.30eec1d1304d76e9621f.svg",
+    "static/media/arrow-right-dark.svg": "/dubai/static/media/arrow-right-dark.2ff70f2a0a2b0d6ddc53.svg",
+    "static/media/arrow-right-grey.svg": "/dubai/static/media/arrow-right-grey.503c5f74ef70f6d2d1a0.svg",
+    "static/media/arrow-right-white.svg": "/dubai/static/media/arrow-right-white.e95bb96e31bc46fcd40b.svg",
+    "static/media/arrow-right.svg": "/dubai/static/media/arrow-right.ac1f6eb4df582f8fb228.svg",
+    "static/media/arrow-main-slider.svg": "/dubai/static/media/arrow-main-slider.7ff583d678aa8c273f46.svg",
+    "static/media/arrow-header.svg": "/dubai/static/media/arrow-header.82eeb72e183db6c845d4.svg",
+    "main.ec3b5ed1.css.map": "/dubai/static/css/main.ec3b5ed1.css.map",
+    "main.b0b361d7.js.map": "/dubai/static/js/main.b0b361d7.js.map",
+    "787.29e211bb.chunk.js.map": "/dubai/static/js/787.29e211bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec3b5ed1.css",
+    "static/js/main.b0b361d7.js"
+  ]
+}

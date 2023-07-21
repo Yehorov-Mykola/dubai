@@ -1,0 +1,799 @@
+{
+  "header":
+  {
+    "menu":[
+      {
+        "title": "blog",
+        "href": "/blog"
+      },
+      {
+        "title": "about",
+        "href": "/about"
+      },
+      {
+        "title": "contact",
+        "href": "/contact"
+      }
+    ],
+    "submenuBtn":"buy",
+    "submenu":[
+      {
+        "title": "Category number one ",
+        "href": "/"
+      },
+      {
+        "title": "Apartments in Dubai",
+        "href": "/"
+      },
+      {
+        "title": "Category number twenty five",
+        "href": "/"
+      }
+    ],
+    "logo": {
+      "title": "DubaiRealty",
+      "subtitle": "Real Estate",
+      "href": "/"
+    },
+    "lang": [
+      {
+        "title": "en",
+        "btn": "en"
+      },
+      {
+        "title": "ua",
+        "btn": "ua"
+      }
+    ],
+    "button": "Book a consultation",
+    "phone": {
+      "title": "+3 (099) 111-11-11",
+      "href": "tel:%2B30991111111"
+    }
+  },
+  "main":
+  {
+    "title": "Welcome home to luxury",
+    "subtitle":"Lorem ipsum",
+    "button": "Book a consultation",
+    "prevBtn": "prev",
+    "nextBtn": "next",
+    "slider":[
+      {
+        "title": "hotel-1",
+        "url": "./img/main-bg/main-slider-1.jpg"
+      },
+      {
+        "title": "hotel-2",
+        "url": "./img/main-bg/main-slider-2.jpg"
+      },
+      {
+        "title": "hotel-3",
+        "url": "./img/main-bg/main-slider-3.jpg"
+      }
+    ],
+    "social":[
+      {
+        "title": "facebook",
+        "href": "/",
+        "url": "./img/svg/main-fb.svg"
+      },
+      {
+        "title": "twitter",
+        "href": "/",
+        "url": "./img/svg/main-tw.svg"
+      },
+      {
+        "title": "youtube",
+        "href": "/",
+        "url": "./img/svg/main-youtube.svg"
+      },
+      {
+        "title": "instagram",
+        "href": "/",
+        "url": "./img/svg/main-inst.svg"
+      },
+      {
+        "title": "in",
+        "href": "/",
+        "url": "./img/svg/main-in.svg"
+      }
+    ],
+    "quote":
+    {
+      "text": "Don't limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve",
+      "author": "Mary Kay Ash"
+    },
+    "mainApartments":[
+      {
+        "title": "apartment-1",
+        "text": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.",
+        "url": "./img/main-apartments/ap-1.jpg"
+      },
+      {
+        "title": "apartment-2",
+        "text": "Vivamus non diam vel lorem efficitur mattis in gravida ante. Ut ullamcorper dapibus ante, eu tincidunt orci feugiat vel. Curabitur eget lectus lectus. Pellentesque malesuada, felis at accumsan interdum, nisl mi fermentum est, eu suscipit dui lorem a dui. Aliquam rhoncus risus in leo vestibulum efficitur. Suspendisse tortor quam, faucibus a lacinia a, bibendum vitae quam. Suspen disse et metus et orci rutrum dictum eu eu nibh. Suspendisse blandit in diam in rhoncus. Nam volutpat hendrerit enim, sed aliquet quam gravida at. Nullam dictum sagittis nisi, eu porta sem mollis eu. Nulla faucibus sed ipsum sed sodales. Curabitur varius iaculis felis, in aliquet sem suscipit quis. Ut vulputate, magna ac bibendum elementum, nulla magna tincidunt urna, a venenatis dolor arcu sed leo. ",
+        "url": "./img/main-apartments/ap-2.jpg"
+      }
+    ],
+    "usefulArticles":{
+      "title": "Useful articles",
+      "link": {
+        "title": "View all articles",
+        "href": "/"
+      },
+      "cards":[
+        {
+          "title": "Discover Hotels",
+          "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+          "date": "April 23, 2023",
+          "btn": "Learn more",
+          "url": "./img/useful-articles/card-1.jpg",
+          "link": "/"
+        },
+        {
+          "title": "Discover Architecture",
+          "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+          "date": "Jule 03, 2022",
+          "btn": "Learn more",
+          "url": "./img/useful-articles/card-2.jpg",
+          "link": "/"
+        },
+        {
+          "title": "Discover Dubai",
+          "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+          "date": "March 09, 2022",
+          "btn": "Learn more",
+          "url": "./img/useful-articles/card-3.jpg",
+          "link": "/"
+        }
+      ]
+    },
+    "faq":{
+      "title": "FAQ",
+      "spoilers":[
+        {
+          "title": "The largest and oldest Quotations Page on the Web with about 30 categories",
+          "text": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.",
+          "id": "spoiler-1"
+        },
+        {
+          "title": "A huge collection of inspirational quotes, thoughts of greatest minds in history",
+          "text": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus.",
+          "id": "spoiler-2"
+        },
+        {
+          "title": "Quotations from the great works of literature",
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+          "id": "spoiler-3"
+        },
+        {
+          "title": "Read quotes and sayings from famous people in history",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "id": "spoiler-4"
+        },
+        {
+          "title": "The largest and oldest Quotations Page on the Web with about 30 categories",
+          "text": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.",
+          "id": "spoiler-5"
+        }
+      ]
+    },
+    "reviews":[
+      { "id": "r1",
+        "name": "Paul",
+        "position": "Owner",
+        "company": "Paul.com",
+        "link": "/",
+        "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.",
+        "url": "./img/reviews/paul.png"
+      },
+      {
+        "id": "r2",
+        "position": "Founder",
+        "company": "Apple inc.",
+        "link": "/",
+        "text": "Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing",
+        "url": "./img/reviews/robert.png"
+      },
+      {
+        "id": "r3",
+        "name": "Paul",
+        "position": "Owner",
+        "company": "Paul.com",
+        "link": "/",
+        "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.",
+        "url": "./img/reviews/paul.png"
+      },
+      {
+        "id": "r4",
+        "name": "Robert",
+        "position": "Founder",
+        "company": "Apple inc.",
+        "link": "/",
+        "text": "Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing",
+        "url": "./img/reviews/robert.png"
+      },
+      {
+        "id": "r5",
+        "name": "Paul",
+        "position": "Owner",
+        "company": "Paul.com",
+        "link": "/",
+        "text": "Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.",
+        "url": "./img/reviews/paul.png"
+      },
+      {
+        "id": "r6",
+        "name": "Robert",
+        "position": "Founder",
+        "company": "Apple inc.",
+        "link": "/",
+        "text": "Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing",
+        "url": "./img/reviews/robert.png"
+      }
+    ]
+  },
+  "blog":{
+    "title": "Blog",
+    "searchPlaceholder": "Search...",
+    "blogNav": ["Main", "Services", "Rent", "Furnished Apartments in Dubai"],
+    "cards":[
+      {
+        "id": "01",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-1.jpg"
+      },
+      {
+        "id": "02",
+        "title": "Hotels in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-2.jpg"
+      },
+      {
+        "id": "03",
+        "title": "Rooms in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-3.jpg"
+      },
+      {
+        "id": "04",
+        "title": "Hostels in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-4.jpg"
+      },
+      {
+        "id": "05",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-5.jpg"
+      },
+      {
+        "id": "06",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-6.jpg"
+      },
+      {
+        "id": "07",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-7.jpg"
+      },
+      {
+        "id": "08",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-8.jpg"
+      },
+      {
+        "id": "09",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-9.jpg"
+      },
+      {
+        "id": "10",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-10.jpg"
+      },
+      {
+        "id": "11",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-11.jpg"
+      },
+      {
+        "id": "12",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-12.jpg"
+      },
+      {
+        "id": "13",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-1.jpg"
+      },
+      {
+        "id": "14",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-2.jpg"
+      },
+      {
+        "id": "15",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-3.jpg"
+      },
+      {
+        "id": "16",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-4.jpg"
+      },
+      {
+        "id": "17",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-5.jpg"
+      },
+      {
+        "id": "18",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-6.jpg"
+      },
+      {
+        "id": "19",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-7.jpg"
+      },
+      {
+        "id": "20",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-8.jpg"
+      },
+      {
+        "id": "21",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-9.jpg"
+      },
+      {
+        "id": "22",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-10.jpg"
+      },
+      {
+        "id": "23",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-11.jpg"
+      },
+      {
+        "id": "24",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-12.jpg"
+      },
+      {
+        "id": "25",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-1.jpg"
+      },
+      {
+        "id": "26",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-2.jpg"
+      },
+      {
+        "id": "27",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-3.jpg"
+      },
+      {
+        "id": "28",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-4.jpg"
+      },
+      {
+        "id": "29",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-5.jpg"
+      },
+      {
+        "id": "30",
+        "title": "Commercial property in Abu Dhabi",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-6.jpg"
+      },
+      {
+        "id": "31",
+        "title": "Commercial property in City Center",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-7.jpg"
+      },
+      {
+        "id": "32",
+        "title": "Houses in City Center",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-8.jpg"
+      },
+      {
+        "id": "33",
+        "title": "Hotels in City Center",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-9.jpg"
+      },
+      {
+        "id": "34",
+        "title": "Rooms in City Center",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-10.jpg"
+      },
+      {
+        "id": "35",
+        "title": "Business in City Center",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-11.jpg"
+      },
+      {
+        "id": "36",
+        "title": "Commercial property in City Center",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-12.jpg"
+      },
+      {
+        "id": "37",
+        "title": "Commercial property in City Center",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-1.jpg"
+      },
+      {
+        "id": "38",
+        "title": "Commercial property in City Center",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-2.jpg"
+      },
+      {
+        "id": "39",
+        "title": "Commercial property in City Center",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-3.jpg"
+      },
+      {
+        "id": "40",
+        "title": "Commercial property in Al Barsha South",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-4.jpg"
+      },
+      {
+        "id": "41",
+        "title": "Commercial property in Al Barsha South",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-5.jpg"
+      },
+      {
+        "id": "42",
+        "title": "Commercial property in Al Barsha South",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-6.jpg"
+      },
+      {
+        "id": "43",
+        "title": "Commercial property in Al Barsha South",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-7.jpg"
+      },
+      {
+        "id": "44",
+        "title": "Commercial property in Al Barsha South",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-8.jpg"
+      },
+      {
+        "id": "45",
+        "title": "Commercial property in Al Barsha South",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-9.jpg"
+      },
+      {
+        "id": "46",
+        "title": "Commercial property in Al Barsha South",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-10.jpg"
+      },
+      {
+        "id": "47",
+        "title": "Commercial property in Al Barsha South",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-11.jpg"
+      },
+      {
+        "id": "48",
+        "title": "Commercial property in Al Barsha South",
+        "text": "In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ...",
+        "btn": "Learn more",
+        "link": "/",
+        "img": "./img/blog/blog-12.jpg"
+      }
+    ]
+  },
+  "footer" : {
+    "menu":[
+      {
+        "title": "Buy",
+        "link": "/buy",
+        "submenu":
+          [
+            {
+              "title": "Apartment in Dubai",
+              "link": "/"
+            },
+            {
+              "title": "House in Dubai",
+              "link": "/"
+            },
+            {
+              "title": "Apartment in Dubai",
+              "link": "/"
+            },
+            {
+              "title": "Loft in Dubai",
+              "link": "/"
+            },
+            {
+              "title": "Penthouse in Dubai",
+              "link": "/"
+            },
+            {
+              "title": "Villa in Dubai",
+              "link": "/"
+            }
+          ]
+      },
+      {
+        "title": "Services",
+        "href": "/services",
+        "submenu":
+          [
+            {
+              "title": "Property management in Dubai, UAE",
+              "href": "/"
+            },
+            {
+              "title": "Sell ​​property in Dubai, UAE",
+              "href": "/"
+            },
+            {
+              "title": "Rent property in Dubai, UAE",
+              "href": "/"
+            },
+            {
+              "title": "Investments in Dubai, UAE",
+              "href": "/"
+            },
+            {
+              "title": "Real estate for cryptocurrency in Dubai",
+              "href": "/"
+            },
+            {
+              "title": "Moving to Dubai, UAE",
+              "href": "/"
+            }
+          ]
+      },
+      {
+        "title": "Information",
+        "href": "/information",
+        "submenu":
+          [
+            {
+              "title": "Video",
+              "href": "/"
+            },
+            {
+              "title": "Podcasts",
+              "href": "/"
+            },
+            {
+              "title": "Laws",
+              "href": "/"
+            },
+            {
+              "title": "Questions and answers",
+              "href": "/"
+            },
+            {
+              "title": "Books",
+              "href": "/"
+            },
+            {
+              "title": "Articles",
+              "href": "/"
+            }
+          ]
+      },
+      {
+        "title": "About company",
+        "href": "/about",
+        "submenu":
+          [
+            {
+              "title": "Jobs",
+              "href": "/"
+            },
+            {
+              "title": "Story",
+              "href": "/"
+            },
+            {
+              "title": "Licenses",
+              "href": "/"
+            },
+            {
+              "title": "Why are we",
+              "href": "/"
+            },
+            {
+              "title": "Real estate agency",
+              "href": "/"
+            }
+          ]
+      },
+      {
+        "title": "Contact",
+        "href": "/contact",
+        "btn": "Book a consultation",
+        "submenu":
+          [
+            {
+              "title": "964 Worthington Drive Dubai, UAE",
+              "href": "/"
+            },
+            {
+              "title": "dubairealty@mail.com",
+              "href": "/"
+            }
+          ]
+      }
+    ],
+    "copyright":{
+      "title": "Copyright © 2023 Dubai Realty",
+      "social":[
+        {
+          "title": "facebook",
+          "href": "/",
+          "url": "./img/svg/main-fb.svg"
+        },
+        {
+          "title": "twitter",
+          "href": "/",
+          "url": "./img/svg/main-tw.svg"
+        },
+        {
+          "title": "youtube",
+          "href": "/",
+          "url": "./img/svg/main-youtube.svg"
+        },
+        {
+          "title": "instagram",
+          "href": "/",
+          "url": "./img/svg/main-inst.svg"
+        },
+        {
+          "title": "in",
+          "href": "/",
+          "url": "./img/svg/main-in.svg"
+        }
+      ]
+    }
+  }
+    
+}
